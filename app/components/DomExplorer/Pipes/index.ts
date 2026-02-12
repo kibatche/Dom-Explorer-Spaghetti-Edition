@@ -4,7 +4,6 @@ import Angular from "./Angular/Angular.pipe.js";
 import Custom from "./Custom/Custom.pipe.js";
 import DomParser from "./DomParser/DomParser.pipe.js";
 import DomPurify from "./DomPurify/DomPurify.pipe.js";
-import SymphonyHtmlSanitizer from "./SymphonyHtmlSanitizer/SymphonyHtmlSanitizer.pipe.js";
 import HighlightJs from "./HighlightJs/HighlightJs.pipe.js";
 import JsXss from "./JsXss/JsXss.pipe.js";
 import Parse5 from "./Parse5/Parse5.pipe.js";
@@ -20,7 +19,6 @@ export const pipes = [
   Custom,
   DomParser,
   DomPurify,
-  SymphonyHtmlSanitizer,
   HighlightJs,
   JsXss,
   Parse5,
@@ -37,7 +35,6 @@ export const pipeParser = z
     Custom.parser,
     DomParser.parser,
     DomPurify.parser,
-    SymphonyHtmlSanitizer.parser,
     HighlightJs.parser,
     JsXss.parser,
     Parse5.parser,
