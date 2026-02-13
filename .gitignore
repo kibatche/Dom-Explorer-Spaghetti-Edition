@@ -24,3 +24,6 @@ logs
 !.env.example
 
 *.local
+package.json
+bun.lockb
+extras/angular/angular.json
