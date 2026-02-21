@@ -47,21 +47,31 @@ else
     ->allowRelativeMedias()
     ->withMaxInputLength(-1)
 ;
-
     // Block some elements (tag is removed but contents is preserved)
+    // DOMPurify style
     $blocked_elements = [
-        'html',
-        'body',
-
-        // form elements
-        'form',
-        'button',
-        'input',
-        'select',
-        'datalist',
-        'option',
-        'optgroup',
-        'textarea',
+    'html',
+    'body',
+    'head',
+    'meta',
+    'link',
+    'base',
+    'script',
+    'noscript',
+    'iframe',
+    'frame',
+    'frameset',
+    'object',
+    'embed',
+    'applet',
+    'param',
+    'layer',
+    'ilayer',
+    'animate',
+    'animatemotion',
+    'animatetransform',
+    'set',
+    'foreignobject',
     ];
     foreach ($blocked_elements as $blocked_element) {
         $config = $config->blockElement($blocked_element);
@@ -69,18 +79,7 @@ else
 
     // Drop some elements (tag and contents are removed)
     $dropped_elements = [
-        'head',
-        'script',
 
-        // header elements used to link external resources
-        'link',
-        'meta',
-
-        // elements used to embed potential malicious external application
-        'applet',
-        'canvas',
-        'embed',
-        'object',
     ];
     foreach ($dropped_elements as $dropped_element) {
         $config = $config->dropElement($dropped_element);
@@ -89,9 +88,20 @@ else
     // Allow class and style attribute
     $config = $config->allowAttribute('class', '*');
     $config = $config->allowAttribute('style', '*');
-
     $config = $config->allowElement('iframe')->dropAttribute('srcdoc', '*');
-
+    $config = $config->allowElement('form');
+    $config = $config->allowElement('style');
+    $config = $config->allowElement('input');
+    $config = $config->allowElement('select');
+    $config = $config->allowElement('textarea');
+    $config = $config->allowElement('math');
+    $config = $config->allowElement('svg');
+    $config = $config->allowElement('style');
+    $config = $config->allowElement('mi');
+    $config = $config->allowElement('mo');
+    $config = $config->allowElement('mn');
+    $config = $config->allowElement('ms');
+    $config = $config->allowElement('mtext');
     // Keep attributes specific to rich text auto completion
     $rich_text_completion_attributes = [
         // required for proper display of autocompleted tags
