@@ -102,6 +102,8 @@ else
     $config = $config->allowElement('mn');
     $config = $config->allowElement('ms');
     $config = $config->allowElement('mtext');
+    $config = $config->allowElement('desc');
+    $config = $config->allowElement('title');
     // Keep attributes specific to rich text auto completion
     $rich_text_completion_attributes = [
         // required for proper display of autocompleted tags
@@ -121,3 +123,9 @@ else
     $sanitizedHtml =  $sanitizer->sanitize($html);
     echo json_encode(["html" => $sanitizedHtml]);
 }
+
+// <?php
+// $dom = new DOMDocument();
+// $dom->loadHTML('<svg><desc>texte</desc></svg>');
+// $desc = $dom->getElementsByTagName('desc')->item(0);
+// var_dump($desc->namespaceURI);
