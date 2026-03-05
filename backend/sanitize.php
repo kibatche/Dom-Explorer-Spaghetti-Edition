@@ -2,7 +2,6 @@
 include_once 'vendor/autoload.php';
 use \Symfony\Component\HtmlSanitizer\HtmlSanitizer;
 use \Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
-use \Symfony\Component\HtmlSanitizer\HtmlSanitizerInterface;
 
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
@@ -58,7 +57,6 @@ else
     'base',
     'script',
     'noscript',
-    'iframe',
     'frame',
     'frameset',
     'object',
@@ -77,26 +75,17 @@ else
         $config = $config->blockElement($blocked_element);
     }
 
-    // Drop some elements (tag and contents are removed)
-    $dropped_elements = [
-
-    ];
-    foreach ($dropped_elements as $dropped_element) {
-        $config = $config->dropElement($dropped_element);
-    }
-
     // Allow class and style attribute
     $config = $config->allowAttribute('class', '*');
     $config = $config->allowAttribute('style', '*');
     $config = $config->allowElement('iframe')->dropAttribute('srcdoc', '*');
+    $config = $config->allowAttribute('shadowrootmode', 'template');
     $config = $config->allowElement('form');
-    $config = $config->allowElement('style');
     $config = $config->allowElement('input');
     $config = $config->allowElement('select');
     $config = $config->allowElement('textarea');
     $config = $config->allowElement('math');
     $config = $config->allowElement('svg');
-    $config = $config->allowElement('style');
     $config = $config->allowElement('mi');
     $config = $config->allowElement('mo');
     $config = $config->allowElement('mn');
@@ -104,28 +93,8 @@ else
     $config = $config->allowElement('mtext');
     $config = $config->allowElement('desc');
     $config = $config->allowElement('title');
-    // Keep attributes specific to rich text auto completion
-    $rich_text_completion_attributes = [
-        // required for proper display of autocompleted tags
-        'contenteditable',
 
-        // required for user mentions and form tags
-        'data-user-mention',
-        'data-user-id',
-        'data-form-tag',
-        'data-form-tag-value',
-        'data-form-tag-provider',
-    ];
-    foreach ($rich_text_completion_attributes as $attribute) {
-        $config = $config->allowAttribute($attribute, 'span');
-    }
     $sanitizer = new HtmlSanitizer($config);
     $sanitizedHtml =  $sanitizer->sanitize($html);
     echo json_encode(["html" => $sanitizedHtml]);
 }
-
-// <?php
-// $dom = new DOMDocument();
-// $dom->loadHTML('<svg><desc>texte</desc></svg>');
-// $desc = $dom->getElementsByTagName('desc')->item(0);
-// var_dump($desc->namespaceURI);

