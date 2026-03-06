@@ -185,7 +185,6 @@ class LexborDocumentType extends LexborNode {
     public string $name = '';
     public string $publicId = '';
     public string $systemId = '';
-    public ?string $internalSubset = '';
 
     public function __construct($node)
     {
@@ -193,7 +192,6 @@ class LexborDocumentType extends LexborNode {
         $this->name = $node->name;
         $this->publicId = $node->publicId;
         $this->systemId = $node->systemId;
-        $this->internalSubset = $node->internalSubset;
     }
 
     public function jsonSerialize(): mixed
@@ -202,7 +200,6 @@ class LexborDocumentType extends LexborNode {
             'name' => $this->name,
             'publicId' => $this->publicId,
             'systemId' => $this->systemId,
-            'internalSubset' => $this->internalSubset,
         ];
     }
 }
@@ -213,35 +210,35 @@ class LexborDocumentType extends LexborNode {
 // The document-level metadata (URL, charset, etc.) is included for completeness
 // but is not consumed by the Vue reconstruction logic.
 class LexborHtmlDocument extends LexborNode {
+    public string $title;
     public string $URL;
     public string $documentURI;
     public string $characterSet;
     public string $charset;
     public string $inputEncoding;
-    public string $title;
 
     function __construct($node) {
         //Node
         parent::__construct($node);
 
         //Document
+        $this->title = $node->title;
         $this->URL = $node->URL;
         $this->documentURI = $node->documentURI;
         $this->characterSet = $node->characterSet;
         $this->charset = $node->charset;
         $this->inputEncoding = $node->inputEncoding;
-        $this->title = $node->title;
     }
 
     function jsonSerialize(): mixed
     {
         return parent::jsonSerialize() + [
+            'title' => $this->title,
             'URL' => $this->URL,
             'documentURI' => $this->documentURI,
             'characterSet' => $this->characterSet,
             'charset' => $this->charset,
             'inputEncoding' => $this->inputEncoding,
-            'title' => $this->title,
         ];
     }
 }

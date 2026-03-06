@@ -1,0 +1,195 @@
+--- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/dom-php-8.4.18/lexbor/lexbor/html/tokenizer/state.c	2026-01-27 02:06:20.000000000 +0100
++++ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tokenizer/state.c	2026-03-03 11:50:38.000000000 +0100
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright (C) 2018-2020 Alexander Borisov
++ * Copyright (C) 2018-2026 Alexander Borisov
+  *
+  * Author: Alexander Borisov <borisov@lexbor.com>
+  */
+@@ -8,16 +8,16 @@
+ #include "lexbor/html/tokenizer/state_comment.h"
+ #include "lexbor/html/tokenizer/state_doctype.h"
+ 
+-#define LEXBOR_STR_RES_ANSI_REPLACEMENT_CHARACTER
+-#define LEXBOR_STR_RES_ALPHANUMERIC_CHARACTER
+-#define LEXBOR_STR_RES_REPLACEMENT_CHARACTER
+-#define LEXBOR_STR_RES_ALPHA_CHARACTER
+-#define LEXBOR_STR_RES_MAP_HEX
+-#define LEXBOR_STR_RES_MAP_NUM
+-#include "lexbor/core/str_res.h"
+-#include "lexbor/core/swar.h"
++#ifndef LEXBOR_DISABLE_INTERNAL_EXTERN
++    LXB_EXTERN const lxb_char_t lexbor_str_res_map_num[256];
++    LXB_EXTERN const lxb_char_t lexbor_str_res_map_hex[256];
++    LXB_EXTERN const lxb_char_t lexbor_str_res_ansi_replacement_character[4];
++    LXB_EXTERN const size_t     lexbor_str_res_alphanumeric_character[256];
++    LXB_EXTERN const size_t     lexbor_str_res_alpha_character[256];
++    LXB_EXTERN const size_t     lexbor_str_res_replacement_character[160];
++#endif
+ 
+-#define LXB_HTML_TOKENIZER_RES_ENTITIES_SBST
++#include "lexbor/core/swar.h"
+ #include "lexbor/html/tokenizer/res.h"
+ 
+ 
+@@ -124,11 +124,6 @@
+ 
+ /* CDATA Section */
+ static const lxb_char_t *
+-lxb_html_tokenizer_state_cdata_section_before(lxb_html_tokenizer_t *tkz,
+-                                              const lxb_char_t *data,
+-                                              const lxb_char_t *end);
+-
+-static const lxb_char_t *
+ lxb_html_tokenizer_state_cdata_section(lxb_html_tokenizer_t *tkz,
+                                        const lxb_char_t *data,
+                                        const lxb_char_t *end);
+@@ -1451,8 +1446,8 @@
+     else if (*data == 0x5B) {
+         if ((end - data) < 7) {
+             tkz->markup = (lxb_char_t *) "[CDATA[";
+-
+             tkz->state = lxb_html_tokenizer_state_markup_declaration_cdata;
++
+             return data;
+         }
+ 
+@@ -1469,6 +1464,9 @@
+                 return data;
+             }
+ 
++            lxb_html_tokenizer_error_add(tkz->parse_errors, data,
++                                         LXB_HTML_TOKENIZER_ERROR_CDINHTCO);
++
+             tkz->state = lxb_html_tokenizer_state_bogus_comment_before;
+ 
+             return data;
+@@ -1504,6 +1502,8 @@
+         return (data + 1);
+     }
+ 
++    lxb_html_tokenizer_state_append_m(tkz, "-", 1);
++
+     lxb_html_tokenizer_error_add(tkz->parse_errors, data,
+                                  LXB_HTML_TOKENIZER_ERROR_INOPCO);
+ 
+@@ -1575,6 +1575,9 @@
+ 
+         lxb_html_tokenizer_state_append_m(tkz, "[CDATA", 6);
+ 
++        lxb_html_tokenizer_error_add(tkz->parse_errors, data,
++                                     LXB_HTML_TOKENIZER_ERROR_CDINHTCO);
++
+         tkz->state = lxb_html_tokenizer_state_bogus_comment_before;
+         return data;
+     }
+@@ -1587,7 +1590,7 @@
+ /*
+  * Helper function. No in the specification. For 12.2.5.69
+  */
+-static const lxb_char_t *
++const lxb_char_t *
+ lxb_html_tokenizer_state_cdata_section_before(lxb_html_tokenizer_t *tkz,
+                                               const lxb_char_t *data,
+                                               const lxb_char_t *end)
+@@ -1820,7 +1823,7 @@
+             goto done;
+         }
+ 
+-        if (entry->value[0] != 0) {
++        if (entry->value != NULL) {
+             tkz->entity_end = (tkz->pos + (data - begin)) - tkz->start;
+             tkz->entity_match = entry;
+         }
+@@ -1857,9 +1860,28 @@
+      */
+     /* U+003B SEMICOLON character (;) */
+     if (tkz->is_attribute && tkz->entity_match->key != 0x3B) {
++        lxb_char_t ch;
++
++        /*
++         * The "next input character" per the spec is the character immediately
++         * after the matched entity, not the character that broke the SBST
++         * lookup.  For example, for "&noti;" the match is "&not"
++         * and the next input character is 'i', not ';'.
++         *
++         * If there are trailing characters in the buffer after the match,
++         * the next input character is the first one after entity_end.
++         * Otherwise it is *data (the character that terminated the SBST).
++         */
++        if (&tkz->start[tkz->entity_end + 1] < tkz->pos) {
++            ch = tkz->start[tkz->entity_end + 1];
++        }
++        else {
++            ch = *data;
++        }
++
+         /* U+003D EQUALS SIGN character (=) or ASCII alphanumeric */
+-        if (*data == 0x3D
+-            || lexbor_str_res_alphanumeric_character[*data] != LEXBOR_STR_RES_SLIP)
++        if (ch == 0x3D
++            || lexbor_str_res_alphanumeric_character[ch] != LEXBOR_STR_RES_SLIP)
+         {
+             return data;
+         }
+@@ -1902,16 +1924,30 @@
+                                                       const lxb_char_t *data,
+                                                       const lxb_char_t *end)
+ {
+-    /* ASCII alphanumeric */
+-    /* Skipped, not need */
++    const lxb_char_t *begin = data;
+ 
+-    /* U+003B SEMICOLON (;) */
+-    if (*data == 0x3B) {
+-        lxb_html_tokenizer_error_add(tkz->parse_errors, data,
+-                                     LXB_HTML_TOKENIZER_ERROR_UNNACHRE);
++    while (data < end) {
++        /* Not ASCII alphanumeric */
++        if (lexbor_str_res_alphanumeric_character[ *data ] == LEXBOR_STR_RES_SLIP) {
++            lxb_html_tokenizer_state_append_m(tkz, begin, (data - begin));
++
++            /* U+003B SEMICOLON (;) */
++            if (*data == 0x3B) {
++                lxb_html_tokenizer_error_add(tkz->parse_errors, data,
++                                             LXB_HTML_TOKENIZER_ERROR_UNNACHRE);
++            }
++
++            tkz->state = tkz->state_return;
++
++            return data;
++        }
++
++        data += 1;
+     }
+ 
+-    tkz->state = tkz->state_return;
++    if (begin < data) {
++        lxb_html_tokenizer_state_append_m(tkz, begin, (data - begin));
++    }
+ 
+     return data;
+ }
+@@ -2002,6 +2038,10 @@
+             if (*data == ';') {
+                 data++;
+             }
++            else {
++                lxb_html_tokenizer_error_add(tkz->parse_errors, data,
++                                             LXB_HTML_TOKENIZER_ERROR_MISEAFCHRE);
++            }
+ 
+             return lxb_html_tokenizer_state_char_ref_numeric_end(tkz, data, end);
+         }
+@@ -2032,6 +2072,10 @@
+             if (*data == ';') {
+                 data++;
+             }
++            else {
++                lxb_html_tokenizer_error_add(tkz->parse_errors, data,
++                                             LXB_HTML_TOKENIZER_ERROR_MISEAFCHRE);
++            }
+ 
+             return lxb_html_tokenizer_state_char_ref_numeric_end(tkz, data, end);
+         }

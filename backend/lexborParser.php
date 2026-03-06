@@ -10,13 +10,37 @@ $port      = $_SERVER['REMOTE_PORT'];
 if ($method != "POST")
 {
     header("Allow: POST");
-    header("HTTP/1.0 405 Method Not Allowed");;
+    header("HTTP/1.0 405 Method Not Allowed");
+    echo json_encode("{}");
 }
 else
 {
     header("Content-Type: application/json");
     $json = json_decode(file_get_contents('php://input'));
+    $lexborVersion = "2.7.0";
+    $phpDomVersion = "php-8.4.18-dom";
     $html = $json->html;
-    $DocPHPDomLexbor = Dom\HTMLDocument::createFromString($html);
-    echo json_encode(new LexborHtmlDocument($DocPHPDomLexbor));
+    $version = $json->lexborVersion;
+    $path = './bin/lexbor_tree-2.7.0';
+    if ($version === $lexborVersion)
+    {
+        $proc = proc_open($path, [
+            0 => ['pipe', 'r'],  // stdin
+            1 => ['pipe', 'w'],  // stdout
+            2 => ['pipe', 'w'],  // stderr
+        ], $pipes);
+
+        fwrite($pipes[0], $html);
+        fclose($pipes[0]);
+
+        $json = stream_get_contents($pipes[1]);
+        proc_close($proc);
+        $jsonENcode = json_decode($json);
+        echo $json;
+    }
+    else
+    {
+        $DocPHPDomLexbor = Dom\HTMLDocument::createFromString($html);
+        echo json_encode(new LexborHtmlDocument($DocPHPDomLexbor));
+    }
 }

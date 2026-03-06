@@ -63,9 +63,8 @@ import type { Pipe } from "~/types.js";
 import type { Opts } from "./Lexbor.pipe.js";
 import type { LexborHtmlDocument, LexborNode } from "./Lexbor.type.js"
 import RenderLexborNode from "../../Render/RenderLexborNode.vue";
-import { options } from "#build/eslint.config.mjs";
 
-const versions = ["2.7.0", "php 8.4.18-dom"];
+const versions = ["2.7.0", "php-8.4.18-dom"];
 
 const props = defineProps<{
   input: string;
@@ -88,16 +87,18 @@ const emit = defineEmits<{
 // hence JSON.stringify on the response object before returning.
 const fetchLexborHtmlDocument = useSandbox(
   async (imp, opt: Opts, input: string) => {
-    const f = await fetch("http://127.0.0.1:5000/lexborParser.php?parser="+opt.version,
+    const f = await fetch("http://127.0.0.1:5000/lexborParser.php",
       {
         'method': 'POST',
         'body': JSON.stringify({
-          "html": input
+          "html": input,
+          "lexborVersion": opt.version
         }),
       }
     );
-    const res = await f.json();
-    return JSON.stringify(res)
+    const res = await f.text()
+    // console.log(res)
+    return res
   },
   () => {},
 );

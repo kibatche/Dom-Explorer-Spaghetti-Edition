@@ -1,0 +1,10 @@
+--- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/dom-php-8.4.18/lexbor/lexbor/html/tree/insertion_mode/after_head.c	2026-01-27 02:06:20.000000000 +0100
++++ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tree/insertion_mode/after_head.c	2026-03-03 11:50:38.000000000 +0100
+@@ -71,7 +71,6 @@
+                 return lxb_html_tree_process_abort(tree);
+             }
+ 
+-            tree->has_explicit_body_tag = true;
+             tree->frameset_ok = false;
+             tree->mode = lxb_html_tree_insertion_mode_in_body;
+ 

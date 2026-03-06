@@ -30,7 +30,6 @@ export interface LexborDocumentType extends LexborNode {
     name: string | '';
     publicId: string | '';
     systemId: string | '';
-    internalSubset: string | '';
 }
 
 export interface LexborHtmlDocument extends LexborNode {
