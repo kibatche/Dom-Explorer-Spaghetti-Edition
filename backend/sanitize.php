@@ -77,7 +77,6 @@ else
 
     // Allow class and style attribute
     $config = $config->allowAttribute('class', '*');
-    $config = $config->allowAttribute('style', '*');
     $config = $config->allowElement('iframe')->dropAttribute('srcdoc', '*');
     $config = $config->allowAttribute('shadowrootmode', 'template');
     $config = $config->allowElement('form');
@@ -93,7 +92,7 @@ else
     $config = $config->allowElement('mtext');
     $config = $config->allowElement('desc');
     $config = $config->allowElement('title');
-
+    // $config = $config->withMaxInputLength(52);
     $sanitizer = new HtmlSanitizer($config);
     $sanitizedHtml =  $sanitizer->sanitize($html);
     echo json_encode(["html" => $sanitizedHtml]);

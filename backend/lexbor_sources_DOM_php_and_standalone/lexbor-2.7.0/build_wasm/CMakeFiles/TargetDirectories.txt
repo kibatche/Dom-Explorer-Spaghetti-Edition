@@ -1,0 +1,9 @@
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/lexbor_static.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/package.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/package_source.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/edit_cache.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/rebuild_cache.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/list_install_components.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/install.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/install/local.dir
+/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/build_wasm/CMakeFiles/install/strip.dir

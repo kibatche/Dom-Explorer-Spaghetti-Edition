@@ -5,21 +5,29 @@ const pipe = definePipe({
   category: "Parser",
   opts: z
     .object({
-      type: z
-        .enum([
-          "application/xhtml+xml",
-          "application/xml",
-          "image/svg+xml",
-          "text/html",
-          "text/xml",
-        ])
-        .catch("text/html"),
+      // type: z
+      //   .enum([
+      //     "application/xhtml+xml",
+      //     "application/xml",
+      //     "image/svg+xml",
+      //     "text/html",
+      //     "text/xml",
+      //   ])
+      //   .catch("text/html"),
       selector: z.string().catch("body"),
       version: z.string().catch("latest"),
       output: z
-        .enum(["source", "innerHTML", "outerHTML", "innerText", "textContent"])
+        .enum([
+          // "source",
+          "innerHTML",
+          // "outerHTML", "innerText", "textContent"
+        ])
         .catch("innerHTML"),
       addDoctype: z.boolean().catch(true),
+      // [PAI] BEGIN — fragment mode options
+      parseMode: z.enum(["createFromString", "innerHTML"]).catch("createFromString"),
+      contextTag: z.string().catch("body"),
+      // [PAI] END
     })
     .catch(() => ({
       type: "text/html" as const,

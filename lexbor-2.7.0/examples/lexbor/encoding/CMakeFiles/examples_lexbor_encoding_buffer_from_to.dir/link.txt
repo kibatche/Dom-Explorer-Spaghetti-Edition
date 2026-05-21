@@ -1,1 +1,0 @@
-/usr/bin/cc  -O2 -Wall -pedantic -pipe -std=c99 -fPIC -Wl,--dependency-file=CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/link.d CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.o -o buffer/from_to  -Wl,-rpath,/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 ../../../liblexbor.so.2.7.0 -lm

@@ -3,8 +3,20 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 #include <time.h>
 
+/**
+ * @author kbtch_
+ * @brief This function transform the nodes to json. It keeps only certain types of node,
+ * like Element node, Document node. It keeps only certains types of informations, whose are needed for DOMExplorer. 
+ * Node type like text and comment are also generated, but only the text content is needed for our work.
+ * The function return a pointer to yyjson_mut_val that represent the whole Document.
+ *
+ * @param node 
+ * @param doc 
+ * @return yyjson_mut_val* 
+ */
 static yyjson_mut_val *node_to_json(lxb_dom_node_t *node, yyjson_mut_doc *doc)
 {
     yyjson_mut_val *obj = yyjson_mut_obj(doc);
@@ -32,9 +44,11 @@ static yyjson_mut_val *node_to_json(lxb_dom_node_t *node, yyjson_mut_doc *doc)
             const lxb_char_t *nodeName = tagName;
             
             lexbor_str_t innerHTML = {0};
-            lxb_html_serialize_deep_str(node, &innerHTML);
             
-
+            // we only keep the body's innerHTML because it's the only one we need.
+            // it helps us to keep the json lighter and let DOMExplorer to pipe it with a second parsing with DOMparser for example
+            if (strcasecmp((const char *)localName, "body") == 0) lxb_html_serialize_deep_str(node, &innerHTML);
+            
             yyjson_mut_obj_add_strn(doc, obj, "localName", (const char*)localName, localNameLen);
             yyjson_mut_obj_add_strn(doc, obj, "tagName", (const char*)tagName, tagNameLen);
             yyjson_mut_obj_add_strn(doc, obj, "nodeName", (const char*)nodeName, nodeNameLen);
@@ -190,7 +204,7 @@ int main()
         }
     }
     
-    // unsigned char html[] = "<!DOCTYPE html><table><template a=\"tetsmsuund 50\" ><a>a</a></template>";
+    // unsigned char html[] = "<!DOCTYPE html><!---- -->";
 
     /* Create document */
     lxb_html_document_t *document = lxb_html_document_create();
@@ -211,7 +225,6 @@ int main()
     yyjson_mut_doc *jsondoc = yyjson_mut_doc_new(NULL);
     yyjson_mut_val *root = NULL;
     lxb_dom_node_t *htmlDocument = lxb_dom_interface_node(document);
-    // lxb_dom_node_t *child = lxb_dom_node_first_child(htmlDocument);
     while (htmlDocument)
     {
         root = node_to_json(htmlDocument, jsondoc);

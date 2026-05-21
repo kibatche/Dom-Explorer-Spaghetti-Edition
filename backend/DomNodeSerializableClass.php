@@ -161,7 +161,12 @@ class LexborElement extends LexborNode {
         {
             array_push($this->attributes, array('name' => $attributeKey, 'value' => $node->getAttribute($attributeKey)));
         }
-        $this->innerHTML = $node->innerHTML ?? '';
+        // we only keep the body's innerHTML because it's the only one we need.
+        // it helps us to keep the json lighter and let DOMExplorer to pipe it with a second parsing with DOMparser for example
+        if (strtolower($this->tagName) == 'body')
+            $this->innerHTML = $node->innerHTML ?? '';
+        else
+            $this->innerHTML = '';
     }
 
     function jsonSerialize(): mixed

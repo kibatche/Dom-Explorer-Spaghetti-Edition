@@ -40,7 +40,27 @@ else
     }
     else
     {
-        $DocPHPDomLexbor = Dom\HTMLDocument::createFromString($html);
-        echo json_encode(new LexborHtmlDocument($DocPHPDomLexbor));
+        // [PAI] BEGIN — parseMode: createFromString (default) | innerHTML (fragment mode)
+        $parseMode = isset($json->parseMode) ? $json->parseMode : 'createFromString';
+        $contextTag = isset($json->contextTag) ? $json->contextTag : 'body';
+
+        if ($parseMode === 'innerHTML') {
+            if ($contextTag === 'body') {
+                $baseDoc = Dom\HTMLDocument::createFromString('<!DOCTYPE html><html><body></body></html>');
+            } else {
+                $baseDoc = Dom\HTMLDocument::createFromString("<!DOCTYPE html><html><body><" . $contextTag . "></" . $contextTag . "></body></html>");
+            }
+            $ctx = $baseDoc->getElementsByTagName($contextTag)->item(0);
+            if ($ctx !== null) {
+                $ctx->innerHTML = $html;
+            }
+            $ParsedDoc = new LexborHtmlDocument($baseDoc);
+            echo json_encode($ParsedDoc, 0, 4096);
+        } else {
+            $DocPHPDomLexbor = Dom\HTMLDocument::createFromString($html);
+            $ParsedDoc = new LexborHtmlDocument($DocPHPDomLexbor);
+            echo json_encode($ParsedDoc, 0, 4096);
+        }
+        // [PAI] END
     }
 }
