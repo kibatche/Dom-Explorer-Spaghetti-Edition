@@ -30,3 +30,5 @@ extras/angular/angular.json
 
 backend/lexbor_sources_DOM_php_and_standalone/**
 
+.vscode
+MXSS_HtmlSanitizer_Symphony.code-workspace
