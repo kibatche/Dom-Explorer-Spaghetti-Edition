@@ -1,1 +1,0 @@
-/usr/bin/cc  -O2 -Wall -pedantic -pipe -std=c99 -fPIC -Wl,--dependency-file=CMakeFiles/examples_lexbor_html_element_attributes.dir/link.d CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.o -o element_attributes  -Wl,-rpath,/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 ../../../liblexbor.so.2.7.0 -lm

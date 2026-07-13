@@ -1,2 +1,0 @@
-/usr/bin/ar qc libunit_static.a CMakeFiles/unit_static.dir/unit/kv.c.o CMakeFiles/unit_static.dir/unit/kv_rules.c.o CMakeFiles/unit_static.dir/unit/kv_state.c.o CMakeFiles/unit_static.dir/unit/test.c.o
-/usr/bin/ranlib libunit_static.a
