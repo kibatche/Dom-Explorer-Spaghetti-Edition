@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form.c" "examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form.dir/normalization_form.c.o" "gcc" "examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form.dir/normalization_form.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form.c" "examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form.dir/normalization_form.c.o" "gcc" "examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form.dir/normalization_form.c.o.d"
   "" "examples/lexbor/unicode/normalization_form" "gcc" "examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form.dir/link.d"
   )
 

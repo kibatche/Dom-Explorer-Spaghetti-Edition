@@ -1,7 +1,12 @@
+
+
+
+
+
 import { z } from "zod";
 
 const pipe = definePipe({
-  name: "SymphonyHtmlSanitizer",
+  name: "SymfonyHtmlSanitizer",
   category: "Sanitizer",
   opts: z
     .object({

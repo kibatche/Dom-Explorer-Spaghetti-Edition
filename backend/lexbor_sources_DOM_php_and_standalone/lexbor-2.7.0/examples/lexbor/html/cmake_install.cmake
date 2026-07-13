@@ -1,4 +1,4 @@
-# Install script for directory: /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/html
+# Install script for directory: /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/html
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/html/install_local_manifest.txt"
+  file(WRITE "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/html/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

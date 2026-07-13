@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CPackSourceConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles//CMakeFiles/progress.marks
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles//CMakeFiles/progress.marks
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/clean
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/rule
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ examples_lexbor_styles_attribute_style: examples/lexbor/styles/CMakeFiles/exampl
 
 # fast build rule for target.
 examples_lexbor_styles_attribute_style/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build
 .PHONY : examples_lexbor_styles_attribute_style/fast
 
 # Convenience name for target.
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/rule
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ examples_lexbor_styles_events_insert: examples/lexbor/styles/CMakeFiles/examples
 
 # fast build rule for target.
 examples_lexbor_styles_events_insert/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build
 .PHONY : examples_lexbor_styles_events_insert/fast
 
 # Convenience name for target.
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/rule
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ examples_lexbor_styles_stylesheet: examples/lexbor/styles/CMakeFiles/examples_le
 
 # fast build rule for target.
 examples_lexbor_styles_stylesheet/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build
 .PHONY : examples_lexbor_styles_stylesheet/fast
 
 # Convenience name for target.
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/rule
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/rule
 
 # Convenience name for target.
@@ -244,7 +244,7 @@ examples_lexbor_styles_walk: examples/lexbor/styles/CMakeFiles/examples_lexbor_s
 
 # fast build rule for target.
 examples_lexbor_styles_walk/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build
 .PHONY : examples_lexbor_styles_walk/fast
 
 attribute_style.o: attribute_style.c.o
@@ -252,7 +252,7 @@ attribute_style.o: attribute_style.c.o
 
 # target to build an object file
 attribute_style.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o
 .PHONY : attribute_style.c.o
 
 attribute_style.i: attribute_style.c.i
@@ -260,7 +260,7 @@ attribute_style.i: attribute_style.c.i
 
 # target to preprocess a source file
 attribute_style.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i
 .PHONY : attribute_style.c.i
 
 attribute_style.s: attribute_style.c.s
@@ -268,7 +268,7 @@ attribute_style.s: attribute_style.c.s
 
 # target to generate assembly for a file
 attribute_style.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s
 .PHONY : attribute_style.c.s
 
 events_insert.o: events_insert.c.o
@@ -276,7 +276,7 @@ events_insert.o: events_insert.c.o
 
 # target to build an object file
 events_insert.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.o
 .PHONY : events_insert.c.o
 
 events_insert.i: events_insert.c.i
@@ -284,7 +284,7 @@ events_insert.i: events_insert.c.i
 
 # target to preprocess a source file
 events_insert.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.i
 .PHONY : events_insert.c.i
 
 events_insert.s: events_insert.c.s
@@ -292,7 +292,7 @@ events_insert.s: events_insert.c.s
 
 # target to generate assembly for a file
 events_insert.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_events_insert.dir/events_insert.c.s
 .PHONY : events_insert.c.s
 
 stylesheet.o: stylesheet.c.o
@@ -300,7 +300,7 @@ stylesheet.o: stylesheet.c.o
 
 # target to build an object file
 stylesheet.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.o
 .PHONY : stylesheet.c.o
 
 stylesheet.i: stylesheet.c.i
@@ -308,7 +308,7 @@ stylesheet.i: stylesheet.c.i
 
 # target to preprocess a source file
 stylesheet.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.i
 .PHONY : stylesheet.c.i
 
 stylesheet.s: stylesheet.c.s
@@ -316,7 +316,7 @@ stylesheet.s: stylesheet.c.s
 
 # target to generate assembly for a file
 stylesheet.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_stylesheet.dir/stylesheet.c.s
 .PHONY : stylesheet.c.s
 
 walk.o: walk.c.o
@@ -324,7 +324,7 @@ walk.o: walk.c.o
 
 # target to build an object file
 walk.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.o
 .PHONY : walk.c.o
 
 walk.i: walk.c.i
@@ -332,7 +332,7 @@ walk.i: walk.c.i
 
 # target to preprocess a source file
 walk.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.i
 .PHONY : walk.c.i
 
 walk.s: walk.c.s
@@ -340,7 +340,7 @@ walk.s: walk.c.s
 
 # target to generate assembly for a file
 walk.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/build.make examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_walk.dir/walk.c.s
 .PHONY : walk.c.s
 
 # Help Target
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/flags.make
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o: test/lexbor/unicode/normalization_forms_code_points.c
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/normalization_forms_code_points.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s
 
 # Object files for target lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points
 lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/unicode/normalization_forms_code_points: test/lexbor/unicode/CMakeFi
 test/lexbor/unicode/normalization_forms_code_points: test/libunit.so
 test/lexbor/unicode/normalization_forms_code_points: liblexbor.so.2.7.0
 test/lexbor/unicode/normalization_forms_code_points: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable normalization_forms_code_points"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable normalization_forms_code_points"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build: test/lexbor/unicode/normalization_forms_code_points
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/cmake_clean.cmake
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/clean
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/depend
 

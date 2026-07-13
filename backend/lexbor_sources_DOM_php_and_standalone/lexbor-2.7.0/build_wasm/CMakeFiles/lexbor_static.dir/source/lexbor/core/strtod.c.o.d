@@ -1,5 +1,5 @@
 CMakeFiles/lexbor_static.dir/source/lexbor/core/strtod.c.o: \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/strtod.c \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/strtod.c \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/stdint.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
@@ -7,8 +7,8 @@ CMakeFiles/lexbor_static.dir/source/lexbor/core/strtod.c.o: \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/compat/math.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/math.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/diyfp.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/base.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/diyfp.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/base.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/stddef.h \
@@ -35,9 +35,9 @@ CMakeFiles/lexbor_static.dir/source/lexbor/core/strtod.c.o: \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/limits.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/def.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/types.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/def.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/types.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/stdbool.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/strtod.h
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/strtod.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/idna_codepoints.c" "test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o" "gcc" "test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/idna_codepoints.c" "test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o" "gcc" "test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o.d"
   "" "test/lexbor/unicode/idna_codepoints" "gcc" "test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/link.d"
   )
 

@@ -1,8 +1,8 @@
 CMakeFiles/lexbor_static.dir/source/lexbor/dom/collection.c.o: \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/collection.c \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/collection.c \
  /usr/include/stdc-predef.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/collection.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/base.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/collection.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/base.h \
  /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -26,26 +26,26 @@ CMakeFiles/lexbor_static.dir/source/lexbor/dom/collection.c.o: \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/pthread_stack_min.h /usr/include/bits/posix2_lim.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/def.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/types.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/def.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/types.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdbool.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/array.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interface.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/tag/const.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/ns/const.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/document.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mraw.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mem.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/bst.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/dobject.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/hash.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/node.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/exception.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/str.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/utils.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/event_target.h
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/array.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interface.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/tag/const.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/ns/const.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/document.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mraw.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mem.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/bst.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/dobject.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/hash.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/node.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/exception.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/str.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/utils.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/event_target.h

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CPackSourceConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/dom//CMakeFiles/progress.marks
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/dom//CMakeFiles/progress.marks
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/clean
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/rule
 .PHONY : test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ lexbor_dom_test_lexbor_dom_exception: test/lexbor/dom/CMakeFiles/lexbor_dom_test
 
 # fast build rule for target.
 lexbor_dom_test_lexbor_dom_exception/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build
 .PHONY : lexbor_dom_test_lexbor_dom_exception/fast
 
 # Convenience name for target.
 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/rule
 .PHONY : test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/rule
 
 # Convenience name for target.
@@ -216,7 +216,7 @@ lexbor_dom_test_lexbor_dom_node: test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexb
 
 # fast build rule for target.
 lexbor_dom_test_lexbor_dom_node/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build
 .PHONY : lexbor_dom_test_lexbor_dom_node/fast
 
 exception.o: exception.c.o
@@ -224,7 +224,7 @@ exception.o: exception.c.o
 
 # target to build an object file
 exception.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.o
 .PHONY : exception.c.o
 
 exception.i: exception.c.i
@@ -232,7 +232,7 @@ exception.i: exception.c.i
 
 # target to preprocess a source file
 exception.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.i
 .PHONY : exception.c.i
 
 exception.s: exception.c.s
@@ -240,7 +240,7 @@ exception.s: exception.c.s
 
 # target to generate assembly for a file
 exception.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_exception.dir/exception.c.s
 .PHONY : exception.c.s
 
 node.o: node.c.o
@@ -248,7 +248,7 @@ node.o: node.c.o
 
 # target to build an object file
 node.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.o
 .PHONY : node.c.o
 
 node.i: node.c.i
@@ -256,7 +256,7 @@ node.i: node.c.i
 
 # target to preprocess a source file
 node.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.i
 .PHONY : node.c.i
 
 node.s: node.c.s
@@ -264,7 +264,7 @@ node.s: node.c.s
 
 # target to generate assembly for a file
 node.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/build.make test/lexbor/dom/CMakeFiles/lexbor_dom_test_lexbor_dom_node.dir/node.c.s
 .PHONY : node.c.s
 
 # Help Target
@@ -301,6 +301,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

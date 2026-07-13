@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/depend.make
@@ -75,16 +75,16 @@ examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/cod
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o: examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/flags.make
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o: examples/lexbor/styles/attribute_style.c
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o: examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o -MF CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o.d -o CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o -MF CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o.d -o CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c
 
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c > CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c > CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.i
 
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c -o CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles/attribute_style.c -o CMakeFiles/examples_lexbor_styles_attribute_style.dir/attribute_style.c.s
 
 # Object files for target examples_lexbor_styles_attribute_style
 examples_lexbor_styles_attribute_style_OBJECTS = \
@@ -98,18 +98,18 @@ examples/lexbor/styles/attribute_style: examples/lexbor/styles/CMakeFiles/exampl
 examples/lexbor/styles/attribute_style: examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/compiler_depend.ts
 examples/lexbor/styles/attribute_style: liblexbor.so.2.7.0
 examples/lexbor/styles/attribute_style: examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable attribute_style"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_styles_attribute_style.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable attribute_style"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_styles_attribute_style.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build: examples/lexbor/styles/attribute_style
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/build
 
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_styles_attribute_style.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_styles_attribute_style.dir/cmake_clean.cmake
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/clean
 
 examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/lexbor/styles/CMakeFiles/examples_lexbor_styles_attribute_style.dir/depend
 

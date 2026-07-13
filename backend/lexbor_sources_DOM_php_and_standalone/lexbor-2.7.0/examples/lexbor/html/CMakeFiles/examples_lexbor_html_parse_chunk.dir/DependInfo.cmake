@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/html/parse_chunk.c" "examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o" "gcc" "examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/html/parse_chunk.c" "examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o" "gcc" "examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o.d"
   "" "examples/lexbor/html/parse_chunk" "gcc" "examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/link.d"
   )
 

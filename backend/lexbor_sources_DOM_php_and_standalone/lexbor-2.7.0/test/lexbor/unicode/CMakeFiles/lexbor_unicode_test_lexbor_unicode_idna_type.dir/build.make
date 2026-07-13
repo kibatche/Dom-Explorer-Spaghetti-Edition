@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/flags.make
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o: test/lexbor/unicode/idna_type.c
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/idna_type.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s
 
 # Object files for target lexbor_unicode_test_lexbor_unicode_idna_type
 lexbor_unicode_test_lexbor_unicode_idna_type_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/unicode/idna_type: test/lexbor/unicode/CMakeFiles/lexbor_unicode_tes
 test/lexbor/unicode/idna_type: test/libunit.so
 test/lexbor/unicode/idna_type: liblexbor.so.2.7.0
 test/lexbor/unicode/idna_type: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable idna_type"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable idna_type"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build: test/lexbor/unicode/idna_type
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/cmake_clean.cmake
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/clean
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/depend
 

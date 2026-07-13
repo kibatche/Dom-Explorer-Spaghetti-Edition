@@ -1,7 +1,7 @@
 CMakeFiles/lexbor_static.dir/source/lexbor/html/interfaces/document.c.o: \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interfaces/document.c \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/str.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/base.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interfaces/document.c \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/str.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/base.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
@@ -33,49 +33,49 @@ CMakeFiles/lexbor_static.dir/source/lexbor/html/interfaces/document.c.o: \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/limits.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/def.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/types.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/def.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/types.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/stdbool.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mraw.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mem.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/bst.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/dobject.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/array.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/utils.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interfaces/document.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/tag/tag.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/hash.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/shs.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/tag/const.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/ns/ns.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/ns/const.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interface.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/base.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interface.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/attr.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/node.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/collection.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/exception.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/event_target.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/attr_const.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/document.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interfaces/title_element.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interfaces/element.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/element.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/avl.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/interfaces/style_element.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/node.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/parser.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tree.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tokenizer.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/sbst.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/array_obj.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/token.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/token_attr.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tokenizer/error.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tag.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/html/tree/error.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/text.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/dom/interfaces/character_data.h
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mraw.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mem.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/bst.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/dobject.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/array.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/utils.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interfaces/document.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/tag/tag.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/hash.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/shs.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/tag/const.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/ns/ns.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/ns/const.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interface.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/base.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interface.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/attr.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/node.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/collection.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/exception.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/event_target.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/attr_const.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/document.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interfaces/title_element.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interfaces/element.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/element.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/avl.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/interfaces/style_element.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/node.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/parser.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/tree.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/tokenizer.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/sbst.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/array_obj.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/token.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/token_attr.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/tokenizer/error.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/tag.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/html/tree/error.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/text.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/dom/interfaces/character_data.h

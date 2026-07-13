@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DLEXBOR_WITHOUT_THREADS -D_POSIX_C_SOURCE=199309L
 
-C_INCLUDES = -I/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source
+C_INCLUDES = -I/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source
 
 C_FLAGS =  -O2 -Wall -pedantic -pipe -std=c99 -fPIC
 

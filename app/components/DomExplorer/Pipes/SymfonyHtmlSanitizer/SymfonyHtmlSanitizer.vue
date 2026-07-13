@@ -1,7 +1,7 @@
 <template>
   <Pipe :pipe="pipe" :error="error">
     <template #title>
-      <span>Symphony / Html Sanitizer</span>
+      <span>Symfony / Html Sanitizer</span>
       <span class="ml-2 text-sm text-muted-foreground">{{
         pipe.opts.version
       }}</span>
@@ -10,12 +10,12 @@
       Sanitize the input with
       <ExternalLink
         href="https://github.com/symfony/html-sanitizer"
-        label="Symphony / Html Sanitizer"
+        label="Symfony / Html Sanitizer"
       />.
     </template>
     <!-- <template #options="{ readOnly }">
       <PipeOption label="Version">
-        <p>Select the version to use for Symphony / Html Sanitizer.</p>
+        <p>Select the version to use for Symfony / Html Sanitizer.</p>
         <SearchInput
           v-model="pipe.opts.version"
           :read-only="readOnly"
@@ -25,7 +25,7 @@
       </PipeOption> -->
       <!-- <PipeOption label="Options">
         <p>
-          The options to pass to Symphony / Html Sanitizer, this code will be passed to
+          The options to pass to Symfony / Html Sanitizer, this code will be passed to
           <code>eval()</code>.
         </p>
         <CodeEditor
@@ -42,7 +42,7 @@
       </PipeOption>
       <PipeOption label="Hooks">
         <p>
-          If you need to add some hooks to Symphony / Html Sanitizer before sanitizing the
+          If you need to add some hooks to Symfony / Html Sanitizer before sanitizing the
           input, you can use this field. Don't forget to call
           <code>removeAllHooks</code> since the function will be called
           everytime the input change.
@@ -69,7 +69,7 @@
 
 <script lang="ts" setup>
 import type { Pipe } from "~/types.js";
-import { type Opts } from "./SymphonyHtmlSanitizer.pipe.js";
+import { type Opts } from "./SymfonyHtmlSanitizer.pipe.js";
 
 const props = defineProps<{
   input: string;

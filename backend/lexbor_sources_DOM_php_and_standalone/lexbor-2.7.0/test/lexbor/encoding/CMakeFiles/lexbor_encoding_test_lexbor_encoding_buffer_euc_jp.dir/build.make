@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/flags.make
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o: test/lexbor/encoding/buffer/euc_jp.c
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o -MF CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o.d -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o -MF CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o.d -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c > CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c > CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.i
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/buffer/euc_jp.c -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/buffer/euc_jp.c.s
 
 # Object files for target lexbor_encoding_test_lexbor_encoding_buffer_euc_jp
 lexbor_encoding_test_lexbor_encoding_buffer_euc_jp_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/encoding/buffer/euc_jp: test/lexbor/encoding/CMakeFiles/lexbor_encod
 test/lexbor/encoding/buffer/euc_jp: test/libunit.so
 test/lexbor/encoding/buffer/euc_jp: liblexbor.so.2.7.0
 test/lexbor/encoding/buffer/euc_jp: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable buffer/euc_jp"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable buffer/euc_jp"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/build: test/lexbor/encoding/buffer/euc_jp
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/build
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/cmake_clean.cmake
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/clean
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_buffer_euc_jp.dir/depend
 

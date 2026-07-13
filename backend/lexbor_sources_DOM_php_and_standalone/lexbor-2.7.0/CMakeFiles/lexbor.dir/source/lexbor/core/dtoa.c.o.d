@@ -1,8 +1,8 @@
 CMakeFiles/lexbor.dir/source/lexbor/core/dtoa.c.o: \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/dtoa.c \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/dtoa.c \
  /usr/include/stdc-predef.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/str.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/base.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/str.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/base.h \
  /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -26,25 +26,25 @@ CMakeFiles/lexbor.dir/source/lexbor/core/dtoa.c.o: \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/pthread_stack_min.h /usr/include/bits/posix2_lim.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/def.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/types.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/def.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/types.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdbool.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mraw.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/mem.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/bst.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/dobject.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/array.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/utils.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/diyfp.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mraw.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/mem.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/bst.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/dobject.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/array.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/utils.h \
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/diyfp.h \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h \
- /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/dtoa.h
+ /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/dtoa.h

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/flags.make
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o: test/lexbor/encoding/single/iso_8859_15.c
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o -MF CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o.d -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o -MF CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o.d -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c > CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c > CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.i
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/single/iso_8859_15.c -o CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/single/iso_8859_15.c.s
 
 # Object files for target lexbor_encoding_test_lexbor_encoding_single_iso_8859_15
 lexbor_encoding_test_lexbor_encoding_single_iso_8859_15_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/encoding/single/iso_8859_15: test/lexbor/encoding/CMakeFiles/lexbor_
 test/lexbor/encoding/single/iso_8859_15: test/libunit.so
 test/lexbor/encoding/single/iso_8859_15: liblexbor.so.2.7.0
 test/lexbor/encoding/single/iso_8859_15: test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable single/iso_8859_15"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable single/iso_8859_15"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/build: test/lexbor/encoding/single/iso_8859_15
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/build
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/cmake_clean.cmake
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/clean
 
 test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/encoding/CMakeFiles/lexbor_encoding_test_lexbor_encoding_single_iso_8859_15.dir/depend
 

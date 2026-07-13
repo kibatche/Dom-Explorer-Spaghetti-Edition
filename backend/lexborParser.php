@@ -4,6 +4,8 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 
+error_reporting(0);
+
 $method = $_SERVER['REQUEST_METHOD'];
 $ipAddress = $_SERVER['REMOTE_ADDR'];
 $port      = $_SERVER['REMOTE_PORT'];
@@ -21,9 +23,14 @@ else
     $phpDomVersion = "php-8.4.18-dom";
     $html = $json->html;
     $version = $json->lexborVersion;
-    $path = './bin/lexbor_tree-2.7.0';
-    if ($version === $lexborVersion)
+    // [PAI] (IA) — versions standalone disponibles via binaire compilé (plug)
+    $standaloneBinaries = [
+        '2.7.0' => './bin/lexbor_tree-2.7.0',
+        '3.0.0' => './bin/lexbor_tree-3.0.0',
+    ];
+    if (isset($standaloneBinaries[$version]))
     {
+        $path = $standaloneBinaries[$version];
         $proc = proc_open($path, [
             0 => ['pipe', 'r'],  // stdin
             1 => ['pipe', 'w'],  // stdout

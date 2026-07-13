@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CPackSourceConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/html//CMakeFiles/progress.marks
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/html//CMakeFiles/progress.marks
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/clean
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ examples_lexbor_html_document_parse: examples/lexbor/html/CMakeFiles/examples_le
 
 # fast build rule for target.
 examples_lexbor_html_document_parse/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build
 .PHONY : examples_lexbor_html_document_parse/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ examples_lexbor_html_document_parse_chunk: examples/lexbor/html/CMakeFiles/examp
 
 # fast build rule for target.
 examples_lexbor_html_document_parse_chunk/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build
 .PHONY : examples_lexbor_html_document_parse_chunk/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ examples_lexbor_html_document_title: examples/lexbor/html/CMakeFiles/examples_le
 
 # fast build rule for target.
 examples_lexbor_html_document_title/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build
 .PHONY : examples_lexbor_html_document_title/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ examples_lexbor_html_element_attributes: examples/lexbor/html/CMakeFiles/example
 
 # fast build rule for target.
 examples_lexbor_html_element_attributes/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build
 .PHONY : examples_lexbor_html_element_attributes/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ examples_lexbor_html_element_create: examples/lexbor/html/CMakeFiles/examples_le
 
 # fast build rule for target.
 examples_lexbor_html_element_create/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build
 .PHONY : examples_lexbor_html_element_create/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ examples_lexbor_html_element_innerHTML: examples/lexbor/html/CMakeFiles/examples
 
 # fast build rule for target.
 examples_lexbor_html_element_innerHTML/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build
 .PHONY : examples_lexbor_html_element_innerHTML/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ examples_lexbor_html_elements_by_attr: examples/lexbor/html/CMakeFiles/examples_
 
 # fast build rule for target.
 examples_lexbor_html_elements_by_attr/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build
 .PHONY : examples_lexbor_html_elements_by_attr/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/rule
 
 # Convenience name for target.
@@ -300,12 +300,12 @@ examples_lexbor_html_elements_by_class_name: examples/lexbor/html/CMakeFiles/exa
 
 # fast build rule for target.
 examples_lexbor_html_elements_by_class_name/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build
 .PHONY : examples_lexbor_html_elements_by_class_name/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ examples_lexbor_html_elements_by_tag_name: examples/lexbor/html/CMakeFiles/examp
 
 # fast build rule for target.
 examples_lexbor_html_elements_by_tag_name/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build
 .PHONY : examples_lexbor_html_elements_by_tag_name/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/rule
 
 # Convenience name for target.
@@ -328,12 +328,12 @@ examples_lexbor_html_encoding: examples/lexbor/html/CMakeFiles/examples_lexbor_h
 
 # fast build rule for target.
 examples_lexbor_html_encoding/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build
 .PHONY : examples_lexbor_html_encoding/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ examples_lexbor_html_html2sexpr: examples/lexbor/html/CMakeFiles/examples_lexbor
 
 # fast build rule for target.
 examples_lexbor_html_html2sexpr/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build
 .PHONY : examples_lexbor_html_html2sexpr/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/rule
 
 # Convenience name for target.
@@ -356,12 +356,12 @@ examples_lexbor_html_parse: examples/lexbor/html/CMakeFiles/examples_lexbor_html
 
 # fast build rule for target.
 examples_lexbor_html_parse/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build
 .PHONY : examples_lexbor_html_parse/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/rule
 
 # Convenience name for target.
@@ -370,12 +370,12 @@ examples_lexbor_html_parse_chunk: examples/lexbor/html/CMakeFiles/examples_lexbo
 
 # fast build rule for target.
 examples_lexbor_html_parse_chunk/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build
 .PHONY : examples_lexbor_html_parse_chunk/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/rule
 
 # Convenience name for target.
@@ -384,12 +384,12 @@ examples_lexbor_html_tokenizer_callback: examples/lexbor/html/CMakeFiles/example
 
 # fast build rule for target.
 examples_lexbor_html_tokenizer_callback/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build
 .PHONY : examples_lexbor_html_tokenizer_callback/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/rule
 
 # Convenience name for target.
@@ -398,12 +398,12 @@ examples_lexbor_html_tokenizer_simple: examples/lexbor/html/CMakeFiles/examples_
 
 # fast build rule for target.
 examples_lexbor_html_tokenizer_simple/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build
 .PHONY : examples_lexbor_html_tokenizer_simple/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/rule
 
 # Convenience name for target.
@@ -412,12 +412,12 @@ examples_lexbor_html_tokenizer_tag_attributes: examples/lexbor/html/CMakeFiles/e
 
 # fast build rule for target.
 examples_lexbor_html_tokenizer_tag_attributes/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build
 .PHONY : examples_lexbor_html_tokenizer_tag_attributes/fast
 
 # Convenience name for target.
 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/rule
 .PHONY : examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/rule
 
 # Convenience name for target.
@@ -426,7 +426,7 @@ examples_lexbor_html_tokenizer_text: examples/lexbor/html/CMakeFiles/examples_le
 
 # fast build rule for target.
 examples_lexbor_html_tokenizer_text/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build
 .PHONY : examples_lexbor_html_tokenizer_text/fast
 
 document_parse.o: document_parse.c.o
@@ -434,7 +434,7 @@ document_parse.o: document_parse.c.o
 
 # target to build an object file
 document_parse.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.o
 .PHONY : document_parse.c.o
 
 document_parse.i: document_parse.c.i
@@ -442,7 +442,7 @@ document_parse.i: document_parse.c.i
 
 # target to preprocess a source file
 document_parse.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.i
 .PHONY : document_parse.c.i
 
 document_parse.s: document_parse.c.s
@@ -450,7 +450,7 @@ document_parse.s: document_parse.c.s
 
 # target to generate assembly for a file
 document_parse.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse.dir/document_parse.c.s
 .PHONY : document_parse.c.s
 
 document_parse_chunk.o: document_parse_chunk.c.o
@@ -458,7 +458,7 @@ document_parse_chunk.o: document_parse_chunk.c.o
 
 # target to build an object file
 document_parse_chunk.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.o
 .PHONY : document_parse_chunk.c.o
 
 document_parse_chunk.i: document_parse_chunk.c.i
@@ -466,7 +466,7 @@ document_parse_chunk.i: document_parse_chunk.c.i
 
 # target to preprocess a source file
 document_parse_chunk.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.i
 .PHONY : document_parse_chunk.c.i
 
 document_parse_chunk.s: document_parse_chunk.c.s
@@ -474,7 +474,7 @@ document_parse_chunk.s: document_parse_chunk.c.s
 
 # target to generate assembly for a file
 document_parse_chunk.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_parse_chunk.dir/document_parse_chunk.c.s
 .PHONY : document_parse_chunk.c.s
 
 document_title.o: document_title.c.o
@@ -482,7 +482,7 @@ document_title.o: document_title.c.o
 
 # target to build an object file
 document_title.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.o
 .PHONY : document_title.c.o
 
 document_title.i: document_title.c.i
@@ -490,7 +490,7 @@ document_title.i: document_title.c.i
 
 # target to preprocess a source file
 document_title.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.i
 .PHONY : document_title.c.i
 
 document_title.s: document_title.c.s
@@ -498,7 +498,7 @@ document_title.s: document_title.c.s
 
 # target to generate assembly for a file
 document_title.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_document_title.dir/document_title.c.s
 .PHONY : document_title.c.s
 
 element_attributes.o: element_attributes.c.o
@@ -506,7 +506,7 @@ element_attributes.o: element_attributes.c.o
 
 # target to build an object file
 element_attributes.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.o
 .PHONY : element_attributes.c.o
 
 element_attributes.i: element_attributes.c.i
@@ -514,7 +514,7 @@ element_attributes.i: element_attributes.c.i
 
 # target to preprocess a source file
 element_attributes.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.i
 .PHONY : element_attributes.c.i
 
 element_attributes.s: element_attributes.c.s
@@ -522,7 +522,7 @@ element_attributes.s: element_attributes.c.s
 
 # target to generate assembly for a file
 element_attributes.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_attributes.dir/element_attributes.c.s
 .PHONY : element_attributes.c.s
 
 element_create.o: element_create.c.o
@@ -530,7 +530,7 @@ element_create.o: element_create.c.o
 
 # target to build an object file
 element_create.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.o
 .PHONY : element_create.c.o
 
 element_create.i: element_create.c.i
@@ -538,7 +538,7 @@ element_create.i: element_create.c.i
 
 # target to preprocess a source file
 element_create.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.i
 .PHONY : element_create.c.i
 
 element_create.s: element_create.c.s
@@ -546,7 +546,7 @@ element_create.s: element_create.c.s
 
 # target to generate assembly for a file
 element_create.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_create.dir/element_create.c.s
 .PHONY : element_create.c.s
 
 element_innerHTML.o: element_innerHTML.c.o
@@ -554,7 +554,7 @@ element_innerHTML.o: element_innerHTML.c.o
 
 # target to build an object file
 element_innerHTML.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.o
 .PHONY : element_innerHTML.c.o
 
 element_innerHTML.i: element_innerHTML.c.i
@@ -562,7 +562,7 @@ element_innerHTML.i: element_innerHTML.c.i
 
 # target to preprocess a source file
 element_innerHTML.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.i
 .PHONY : element_innerHTML.c.i
 
 element_innerHTML.s: element_innerHTML.c.s
@@ -570,7 +570,7 @@ element_innerHTML.s: element_innerHTML.c.s
 
 # target to generate assembly for a file
 element_innerHTML.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_element_innerHTML.dir/element_innerHTML.c.s
 .PHONY : element_innerHTML.c.s
 
 elements_by_attr.o: elements_by_attr.c.o
@@ -578,7 +578,7 @@ elements_by_attr.o: elements_by_attr.c.o
 
 # target to build an object file
 elements_by_attr.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.o
 .PHONY : elements_by_attr.c.o
 
 elements_by_attr.i: elements_by_attr.c.i
@@ -586,7 +586,7 @@ elements_by_attr.i: elements_by_attr.c.i
 
 # target to preprocess a source file
 elements_by_attr.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.i
 .PHONY : elements_by_attr.c.i
 
 elements_by_attr.s: elements_by_attr.c.s
@@ -594,7 +594,7 @@ elements_by_attr.s: elements_by_attr.c.s
 
 # target to generate assembly for a file
 elements_by_attr.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_attr.dir/elements_by_attr.c.s
 .PHONY : elements_by_attr.c.s
 
 elements_by_class_name.o: elements_by_class_name.c.o
@@ -602,7 +602,7 @@ elements_by_class_name.o: elements_by_class_name.c.o
 
 # target to build an object file
 elements_by_class_name.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.o
 .PHONY : elements_by_class_name.c.o
 
 elements_by_class_name.i: elements_by_class_name.c.i
@@ -610,7 +610,7 @@ elements_by_class_name.i: elements_by_class_name.c.i
 
 # target to preprocess a source file
 elements_by_class_name.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.i
 .PHONY : elements_by_class_name.c.i
 
 elements_by_class_name.s: elements_by_class_name.c.s
@@ -618,7 +618,7 @@ elements_by_class_name.s: elements_by_class_name.c.s
 
 # target to generate assembly for a file
 elements_by_class_name.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_class_name.dir/elements_by_class_name.c.s
 .PHONY : elements_by_class_name.c.s
 
 elements_by_tag_name.o: elements_by_tag_name.c.o
@@ -626,7 +626,7 @@ elements_by_tag_name.o: elements_by_tag_name.c.o
 
 # target to build an object file
 elements_by_tag_name.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.o
 .PHONY : elements_by_tag_name.c.o
 
 elements_by_tag_name.i: elements_by_tag_name.c.i
@@ -634,7 +634,7 @@ elements_by_tag_name.i: elements_by_tag_name.c.i
 
 # target to preprocess a source file
 elements_by_tag_name.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.i
 .PHONY : elements_by_tag_name.c.i
 
 elements_by_tag_name.s: elements_by_tag_name.c.s
@@ -642,7 +642,7 @@ elements_by_tag_name.s: elements_by_tag_name.c.s
 
 # target to generate assembly for a file
 elements_by_tag_name.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_elements_by_tag_name.dir/elements_by_tag_name.c.s
 .PHONY : elements_by_tag_name.c.s
 
 encoding.o: encoding.c.o
@@ -650,7 +650,7 @@ encoding.o: encoding.c.o
 
 # target to build an object file
 encoding.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.o
 .PHONY : encoding.c.o
 
 encoding.i: encoding.c.i
@@ -658,7 +658,7 @@ encoding.i: encoding.c.i
 
 # target to preprocess a source file
 encoding.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.i
 .PHONY : encoding.c.i
 
 encoding.s: encoding.c.s
@@ -666,7 +666,7 @@ encoding.s: encoding.c.s
 
 # target to generate assembly for a file
 encoding.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_encoding.dir/encoding.c.s
 .PHONY : encoding.c.s
 
 html2sexpr.o: html2sexpr.c.o
@@ -674,7 +674,7 @@ html2sexpr.o: html2sexpr.c.o
 
 # target to build an object file
 html2sexpr.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.o
 .PHONY : html2sexpr.c.o
 
 html2sexpr.i: html2sexpr.c.i
@@ -682,7 +682,7 @@ html2sexpr.i: html2sexpr.c.i
 
 # target to preprocess a source file
 html2sexpr.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.i
 .PHONY : html2sexpr.c.i
 
 html2sexpr.s: html2sexpr.c.s
@@ -690,7 +690,7 @@ html2sexpr.s: html2sexpr.c.s
 
 # target to generate assembly for a file
 html2sexpr.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_html2sexpr.dir/html2sexpr.c.s
 .PHONY : html2sexpr.c.s
 
 parse.o: parse.c.o
@@ -698,7 +698,7 @@ parse.o: parse.c.o
 
 # target to build an object file
 parse.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.o
 .PHONY : parse.c.o
 
 parse.i: parse.c.i
@@ -706,7 +706,7 @@ parse.i: parse.c.i
 
 # target to preprocess a source file
 parse.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.i
 .PHONY : parse.c.i
 
 parse.s: parse.c.s
@@ -714,7 +714,7 @@ parse.s: parse.c.s
 
 # target to generate assembly for a file
 parse.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse.dir/parse.c.s
 .PHONY : parse.c.s
 
 parse_chunk.o: parse_chunk.c.o
@@ -722,7 +722,7 @@ parse_chunk.o: parse_chunk.c.o
 
 # target to build an object file
 parse_chunk.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.o
 .PHONY : parse_chunk.c.o
 
 parse_chunk.i: parse_chunk.c.i
@@ -730,7 +730,7 @@ parse_chunk.i: parse_chunk.c.i
 
 # target to preprocess a source file
 parse_chunk.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.i
 .PHONY : parse_chunk.c.i
 
 parse_chunk.s: parse_chunk.c.s
@@ -738,7 +738,7 @@ parse_chunk.s: parse_chunk.c.s
 
 # target to generate assembly for a file
 parse_chunk.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_parse_chunk.dir/parse_chunk.c.s
 .PHONY : parse_chunk.c.s
 
 tokenizer/callback.o: tokenizer/callback.c.o
@@ -746,7 +746,7 @@ tokenizer/callback.o: tokenizer/callback.c.o
 
 # target to build an object file
 tokenizer/callback.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.o
 .PHONY : tokenizer/callback.c.o
 
 tokenizer/callback.i: tokenizer/callback.c.i
@@ -754,7 +754,7 @@ tokenizer/callback.i: tokenizer/callback.c.i
 
 # target to preprocess a source file
 tokenizer/callback.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.i
 .PHONY : tokenizer/callback.c.i
 
 tokenizer/callback.s: tokenizer/callback.c.s
@@ -762,7 +762,7 @@ tokenizer/callback.s: tokenizer/callback.c.s
 
 # target to generate assembly for a file
 tokenizer/callback.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_callback.dir/tokenizer/callback.c.s
 .PHONY : tokenizer/callback.c.s
 
 tokenizer/simple.o: tokenizer/simple.c.o
@@ -770,7 +770,7 @@ tokenizer/simple.o: tokenizer/simple.c.o
 
 # target to build an object file
 tokenizer/simple.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.o
 .PHONY : tokenizer/simple.c.o
 
 tokenizer/simple.i: tokenizer/simple.c.i
@@ -778,7 +778,7 @@ tokenizer/simple.i: tokenizer/simple.c.i
 
 # target to preprocess a source file
 tokenizer/simple.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.i
 .PHONY : tokenizer/simple.c.i
 
 tokenizer/simple.s: tokenizer/simple.c.s
@@ -786,7 +786,7 @@ tokenizer/simple.s: tokenizer/simple.c.s
 
 # target to generate assembly for a file
 tokenizer/simple.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_simple.dir/tokenizer/simple.c.s
 .PHONY : tokenizer/simple.c.s
 
 tokenizer/tag_attributes.o: tokenizer/tag_attributes.c.o
@@ -794,7 +794,7 @@ tokenizer/tag_attributes.o: tokenizer/tag_attributes.c.o
 
 # target to build an object file
 tokenizer/tag_attributes.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.o
 .PHONY : tokenizer/tag_attributes.c.o
 
 tokenizer/tag_attributes.i: tokenizer/tag_attributes.c.i
@@ -802,7 +802,7 @@ tokenizer/tag_attributes.i: tokenizer/tag_attributes.c.i
 
 # target to preprocess a source file
 tokenizer/tag_attributes.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.i
 .PHONY : tokenizer/tag_attributes.c.i
 
 tokenizer/tag_attributes.s: tokenizer/tag_attributes.c.s
@@ -810,7 +810,7 @@ tokenizer/tag_attributes.s: tokenizer/tag_attributes.c.s
 
 # target to generate assembly for a file
 tokenizer/tag_attributes.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_tag_attributes.dir/tokenizer/tag_attributes.c.s
 .PHONY : tokenizer/tag_attributes.c.s
 
 tokenizer/text.o: tokenizer/text.c.o
@@ -818,7 +818,7 @@ tokenizer/text.o: tokenizer/text.c.o
 
 # target to build an object file
 tokenizer/text.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.o
 .PHONY : tokenizer/text.c.o
 
 tokenizer/text.i: tokenizer/text.c.i
@@ -826,7 +826,7 @@ tokenizer/text.i: tokenizer/text.c.i
 
 # target to preprocess a source file
 tokenizer/text.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.i
 .PHONY : tokenizer/text.c.i
 
 tokenizer/text.s: tokenizer/text.c.s
@@ -834,7 +834,7 @@ tokenizer/text.s: tokenizer/text.c.s
 
 # target to generate assembly for a file
 tokenizer/text.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/build.make examples/lexbor/html/CMakeFiles/examples_lexbor_html_tokenizer_text.dir/tokenizer/text.c.s
 .PHONY : tokenizer/text.c.s
 
 # Help Target
@@ -931,6 +931,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

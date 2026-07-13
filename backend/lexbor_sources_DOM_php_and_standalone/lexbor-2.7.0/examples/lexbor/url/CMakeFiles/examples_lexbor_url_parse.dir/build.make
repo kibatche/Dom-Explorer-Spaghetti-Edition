@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/depend.make
@@ -75,16 +75,16 @@ examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/codegen:
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o: examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/flags.make
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o: examples/lexbor/url/parse.c
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o: examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o -MF CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o.d -o CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url/parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o -MF CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o.d -o CMakeFiles/examples_lexbor_url_parse.dir/parse.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url/parse.c
 
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples_lexbor_url_parse.dir/parse.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url/parse.c > CMakeFiles/examples_lexbor_url_parse.dir/parse.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url/parse.c > CMakeFiles/examples_lexbor_url_parse.dir/parse.c.i
 
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples_lexbor_url_parse.dir/parse.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url/parse.c -o CMakeFiles/examples_lexbor_url_parse.dir/parse.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url/parse.c -o CMakeFiles/examples_lexbor_url_parse.dir/parse.c.s
 
 # Object files for target examples_lexbor_url_parse
 examples_lexbor_url_parse_OBJECTS = \
@@ -98,18 +98,18 @@ examples/lexbor/url/parse: examples/lexbor/url/CMakeFiles/examples_lexbor_url_pa
 examples/lexbor/url/parse: examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/compiler_depend.ts
 examples/lexbor/url/parse: liblexbor.so.2.7.0
 examples/lexbor/url/parse: examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable parse"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_url_parse.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable parse"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_url_parse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/build: examples/lexbor/url/parse
 .PHONY : examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/build
 
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_url_parse.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_url_parse.dir/cmake_clean.cmake
 .PHONY : examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/clean
 
 examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/lexbor/url/CMakeFiles/examples_lexbor_url_parse.dir/depend
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/css/syntax/structure_parse_file.c" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_structure_parse_file.dir/syntax/structure_parse_file.c.o" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_structure_parse_file.dir/syntax/structure_parse_file.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/css/syntax/structure_parse_file.c" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_structure_parse_file.dir/syntax/structure_parse_file.c.o" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_structure_parse_file.dir/syntax/structure_parse_file.c.o.d"
   "" "examples/lexbor/css/syntax/structure_parse_file" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_structure_parse_file.dir/link.d"
   )
 

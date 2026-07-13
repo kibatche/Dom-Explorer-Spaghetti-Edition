@@ -5,7 +5,7 @@ import Custom from "./Custom/Custom.pipe.js";
 import DomParser from "./DomParser/DomParser.pipe.js";
 import DomPurify from "./DomPurify/DomPurify.pipe.js";
 import Lexbor from "./Lexbor/Lexbor.pipe.js";
-import SymphonyHtmlSanitizer from "./SymphonyHtmlSanitizer/SymphonyHtmlSanitizer.pipe.js";
+import SymfonyHtmlSanitizer from "./SymfonyHtmlSanitizer/SymfonyHtmlSanitizer.pipe.js";
 import HighlightJs from "./HighlightJs/HighlightJs.pipe.js";
 import JsXss from "./JsXss/JsXss.pipe.js";
 import Parse5 from "./Parse5/Parse5.pipe.js";
@@ -22,7 +22,7 @@ export const pipes = [
   DomParser,
   Lexbor,
   DomPurify,
-  SymphonyHtmlSanitizer,
+  SymfonyHtmlSanitizer,
   HighlightJs,
   JsXss,
   Parse5,
@@ -40,7 +40,7 @@ export const pipeParser = z
     DomParser.parser,
     Lexbor.parser,
     DomPurify.parser,
-    SymphonyHtmlSanitizer.parser,
+    SymfonyHtmlSanitizer.parser,
     HighlightJs.parser,
     JsXss.parser,
     Parse5.parser,

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/codegen:
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o: test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/flags.make
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o: test/lexbor/ns/res.c
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o: test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o -MF CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o.d -o CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns/res.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o -MF CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o.d -o CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns/res.c
 
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns/res.c > CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns/res.c > CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.i
 
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns/res.c -o CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns/res.c -o CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.s
 
 # Object files for target lexbor_ns_test_lexbor_ns_res
 lexbor_ns_test_lexbor_ns_res_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/ns/res: test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/c
 test/lexbor/ns/res: test/libunit.so
 test/lexbor/ns/res: liblexbor.so.2.7.0
 test/lexbor/ns/res: test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable res"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable res"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/build: test/lexbor/ns/res
 .PHONY : test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/build
 
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/cmake_clean.cmake
 .PHONY : test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/clean
 
 test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/depend
 

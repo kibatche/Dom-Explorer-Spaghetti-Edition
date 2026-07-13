@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CPackSourceConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/encoding//CMakeFiles/progress.marks
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/encoding//CMakeFiles/progress.marks
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/clean
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ examples_lexbor_encoding_buffer_decode_decode: examples/lexbor/encoding/CMakeFil
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_decode_decode/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build
 .PHONY : examples_lexbor_encoding_buffer_decode_decode/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ examples_lexbor_encoding_buffer_decode_decoder: examples/lexbor/encoding/CMakeFi
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_decode_decoder/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build
 .PHONY : examples_lexbor_encoding_buffer_decode_decoder/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ examples_lexbor_encoding_buffer_decode_validate: examples/lexbor/encoding/CMakeF
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_decode_validate/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build
 .PHONY : examples_lexbor_encoding_buffer_decode_validate/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ examples_lexbor_encoding_buffer_encode_encode: examples/lexbor/encoding/CMakeFil
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_encode_encode/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build
 .PHONY : examples_lexbor_encoding_buffer_encode_encode/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ examples_lexbor_encoding_buffer_encode_encoder: examples/lexbor/encoding/CMakeFi
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_encode_encoder/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build
 .PHONY : examples_lexbor_encoding_buffer_encode_encoder/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ examples_lexbor_encoding_buffer_encode_validate: examples/lexbor/encoding/CMakeF
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_encode_validate/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build
 .PHONY : examples_lexbor_encoding_buffer_encode_validate/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ examples_lexbor_encoding_buffer_from_to: examples/lexbor/encoding/CMakeFiles/exa
 
 # fast build rule for target.
 examples_lexbor_encoding_buffer_from_to/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build
 .PHONY : examples_lexbor_encoding_buffer_from_to/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/rule
 
 # Convenience name for target.
@@ -300,12 +300,12 @@ examples_lexbor_encoding_data_by_name: examples/lexbor/encoding/CMakeFiles/examp
 
 # fast build rule for target.
 examples_lexbor_encoding_data_by_name/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build
 .PHONY : examples_lexbor_encoding_data_by_name/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ examples_lexbor_encoding_single_decode_decode: examples/lexbor/encoding/CMakeFil
 
 # fast build rule for target.
 examples_lexbor_encoding_single_decode_decode/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build
 .PHONY : examples_lexbor_encoding_single_decode_decode/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/rule
 
 # Convenience name for target.
@@ -328,12 +328,12 @@ examples_lexbor_encoding_single_decode_decoder: examples/lexbor/encoding/CMakeFi
 
 # fast build rule for target.
 examples_lexbor_encoding_single_decode_decoder/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build
 .PHONY : examples_lexbor_encoding_single_decode_decoder/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ examples_lexbor_encoding_single_decode_validate: examples/lexbor/encoding/CMakeF
 
 # fast build rule for target.
 examples_lexbor_encoding_single_decode_validate/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build
 .PHONY : examples_lexbor_encoding_single_decode_validate/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/rule
 
 # Convenience name for target.
@@ -356,12 +356,12 @@ examples_lexbor_encoding_single_encode_encode: examples/lexbor/encoding/CMakeFil
 
 # fast build rule for target.
 examples_lexbor_encoding_single_encode_encode/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build
 .PHONY : examples_lexbor_encoding_single_encode_encode/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/rule
 
 # Convenience name for target.
@@ -370,12 +370,12 @@ examples_lexbor_encoding_single_encode_encoder: examples/lexbor/encoding/CMakeFi
 
 # fast build rule for target.
 examples_lexbor_encoding_single_encode_encoder/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build
 .PHONY : examples_lexbor_encoding_single_encode_encoder/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/rule
 
 # Convenience name for target.
@@ -384,12 +384,12 @@ examples_lexbor_encoding_single_encode_validate: examples/lexbor/encoding/CMakeF
 
 # fast build rule for target.
 examples_lexbor_encoding_single_encode_validate/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build
 .PHONY : examples_lexbor_encoding_single_encode_validate/fast
 
 # Convenience name for target.
 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/rule
 .PHONY : examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/rule
 
 # Convenience name for target.
@@ -398,7 +398,7 @@ examples_lexbor_encoding_single_from_to: examples/lexbor/encoding/CMakeFiles/exa
 
 # fast build rule for target.
 examples_lexbor_encoding_single_from_to/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build
 .PHONY : examples_lexbor_encoding_single_from_to/fast
 
 buffer/decode/decode.o: buffer/decode/decode.c.o
@@ -406,7 +406,7 @@ buffer/decode/decode.o: buffer/decode/decode.c.o
 
 # target to build an object file
 buffer/decode/decode.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.o
 .PHONY : buffer/decode/decode.c.o
 
 buffer/decode/decode.i: buffer/decode/decode.c.i
@@ -414,7 +414,7 @@ buffer/decode/decode.i: buffer/decode/decode.c.i
 
 # target to preprocess a source file
 buffer/decode/decode.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.i
 .PHONY : buffer/decode/decode.c.i
 
 buffer/decode/decode.s: buffer/decode/decode.c.s
@@ -422,7 +422,7 @@ buffer/decode/decode.s: buffer/decode/decode.c.s
 
 # target to generate assembly for a file
 buffer/decode/decode.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decode.dir/buffer/decode/decode.c.s
 .PHONY : buffer/decode/decode.c.s
 
 buffer/decode/decoder.o: buffer/decode/decoder.c.o
@@ -430,7 +430,7 @@ buffer/decode/decoder.o: buffer/decode/decoder.c.o
 
 # target to build an object file
 buffer/decode/decoder.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.o
 .PHONY : buffer/decode/decoder.c.o
 
 buffer/decode/decoder.i: buffer/decode/decoder.c.i
@@ -438,7 +438,7 @@ buffer/decode/decoder.i: buffer/decode/decoder.c.i
 
 # target to preprocess a source file
 buffer/decode/decoder.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.i
 .PHONY : buffer/decode/decoder.c.i
 
 buffer/decode/decoder.s: buffer/decode/decoder.c.s
@@ -446,7 +446,7 @@ buffer/decode/decoder.s: buffer/decode/decoder.c.s
 
 # target to generate assembly for a file
 buffer/decode/decoder.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_decoder.dir/buffer/decode/decoder.c.s
 .PHONY : buffer/decode/decoder.c.s
 
 buffer/decode/validate.o: buffer/decode/validate.c.o
@@ -454,7 +454,7 @@ buffer/decode/validate.o: buffer/decode/validate.c.o
 
 # target to build an object file
 buffer/decode/validate.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.o
 .PHONY : buffer/decode/validate.c.o
 
 buffer/decode/validate.i: buffer/decode/validate.c.i
@@ -462,7 +462,7 @@ buffer/decode/validate.i: buffer/decode/validate.c.i
 
 # target to preprocess a source file
 buffer/decode/validate.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.i
 .PHONY : buffer/decode/validate.c.i
 
 buffer/decode/validate.s: buffer/decode/validate.c.s
@@ -470,7 +470,7 @@ buffer/decode/validate.s: buffer/decode/validate.c.s
 
 # target to generate assembly for a file
 buffer/decode/validate.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_decode_validate.dir/buffer/decode/validate.c.s
 .PHONY : buffer/decode/validate.c.s
 
 buffer/encode/encode.o: buffer/encode/encode.c.o
@@ -478,7 +478,7 @@ buffer/encode/encode.o: buffer/encode/encode.c.o
 
 # target to build an object file
 buffer/encode/encode.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.o
 .PHONY : buffer/encode/encode.c.o
 
 buffer/encode/encode.i: buffer/encode/encode.c.i
@@ -486,7 +486,7 @@ buffer/encode/encode.i: buffer/encode/encode.c.i
 
 # target to preprocess a source file
 buffer/encode/encode.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.i
 .PHONY : buffer/encode/encode.c.i
 
 buffer/encode/encode.s: buffer/encode/encode.c.s
@@ -494,7 +494,7 @@ buffer/encode/encode.s: buffer/encode/encode.c.s
 
 # target to generate assembly for a file
 buffer/encode/encode.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encode.dir/buffer/encode/encode.c.s
 .PHONY : buffer/encode/encode.c.s
 
 buffer/encode/encoder.o: buffer/encode/encoder.c.o
@@ -502,7 +502,7 @@ buffer/encode/encoder.o: buffer/encode/encoder.c.o
 
 # target to build an object file
 buffer/encode/encoder.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.o
 .PHONY : buffer/encode/encoder.c.o
 
 buffer/encode/encoder.i: buffer/encode/encoder.c.i
@@ -510,7 +510,7 @@ buffer/encode/encoder.i: buffer/encode/encoder.c.i
 
 # target to preprocess a source file
 buffer/encode/encoder.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.i
 .PHONY : buffer/encode/encoder.c.i
 
 buffer/encode/encoder.s: buffer/encode/encoder.c.s
@@ -518,7 +518,7 @@ buffer/encode/encoder.s: buffer/encode/encoder.c.s
 
 # target to generate assembly for a file
 buffer/encode/encoder.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_encoder.dir/buffer/encode/encoder.c.s
 .PHONY : buffer/encode/encoder.c.s
 
 buffer/encode/validate.o: buffer/encode/validate.c.o
@@ -526,7 +526,7 @@ buffer/encode/validate.o: buffer/encode/validate.c.o
 
 # target to build an object file
 buffer/encode/validate.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.o
 .PHONY : buffer/encode/validate.c.o
 
 buffer/encode/validate.i: buffer/encode/validate.c.i
@@ -534,7 +534,7 @@ buffer/encode/validate.i: buffer/encode/validate.c.i
 
 # target to preprocess a source file
 buffer/encode/validate.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.i
 .PHONY : buffer/encode/validate.c.i
 
 buffer/encode/validate.s: buffer/encode/validate.c.s
@@ -542,7 +542,7 @@ buffer/encode/validate.s: buffer/encode/validate.c.s
 
 # target to generate assembly for a file
 buffer/encode/validate.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_encode_validate.dir/buffer/encode/validate.c.s
 .PHONY : buffer/encode/validate.c.s
 
 buffer/from_to.o: buffer/from_to.c.o
@@ -550,7 +550,7 @@ buffer/from_to.o: buffer/from_to.c.o
 
 # target to build an object file
 buffer/from_to.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.o
 .PHONY : buffer/from_to.c.o
 
 buffer/from_to.i: buffer/from_to.c.i
@@ -558,7 +558,7 @@ buffer/from_to.i: buffer/from_to.c.i
 
 # target to preprocess a source file
 buffer/from_to.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.i
 .PHONY : buffer/from_to.c.i
 
 buffer/from_to.s: buffer/from_to.c.s
@@ -566,7 +566,7 @@ buffer/from_to.s: buffer/from_to.c.s
 
 # target to generate assembly for a file
 buffer/from_to.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_buffer_from_to.dir/buffer/from_to.c.s
 .PHONY : buffer/from_to.c.s
 
 data_by_name.o: data_by_name.c.o
@@ -574,7 +574,7 @@ data_by_name.o: data_by_name.c.o
 
 # target to build an object file
 data_by_name.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.o
 .PHONY : data_by_name.c.o
 
 data_by_name.i: data_by_name.c.i
@@ -582,7 +582,7 @@ data_by_name.i: data_by_name.c.i
 
 # target to preprocess a source file
 data_by_name.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.i
 .PHONY : data_by_name.c.i
 
 data_by_name.s: data_by_name.c.s
@@ -590,7 +590,7 @@ data_by_name.s: data_by_name.c.s
 
 # target to generate assembly for a file
 data_by_name.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_data_by_name.dir/data_by_name.c.s
 .PHONY : data_by_name.c.s
 
 single/decode/decode.o: single/decode/decode.c.o
@@ -598,7 +598,7 @@ single/decode/decode.o: single/decode/decode.c.o
 
 # target to build an object file
 single/decode/decode.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.o
 .PHONY : single/decode/decode.c.o
 
 single/decode/decode.i: single/decode/decode.c.i
@@ -606,7 +606,7 @@ single/decode/decode.i: single/decode/decode.c.i
 
 # target to preprocess a source file
 single/decode/decode.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.i
 .PHONY : single/decode/decode.c.i
 
 single/decode/decode.s: single/decode/decode.c.s
@@ -614,7 +614,7 @@ single/decode/decode.s: single/decode/decode.c.s
 
 # target to generate assembly for a file
 single/decode/decode.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decode.dir/single/decode/decode.c.s
 .PHONY : single/decode/decode.c.s
 
 single/decode/decoder.o: single/decode/decoder.c.o
@@ -622,7 +622,7 @@ single/decode/decoder.o: single/decode/decoder.c.o
 
 # target to build an object file
 single/decode/decoder.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.o
 .PHONY : single/decode/decoder.c.o
 
 single/decode/decoder.i: single/decode/decoder.c.i
@@ -630,7 +630,7 @@ single/decode/decoder.i: single/decode/decoder.c.i
 
 # target to preprocess a source file
 single/decode/decoder.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.i
 .PHONY : single/decode/decoder.c.i
 
 single/decode/decoder.s: single/decode/decoder.c.s
@@ -638,7 +638,7 @@ single/decode/decoder.s: single/decode/decoder.c.s
 
 # target to generate assembly for a file
 single/decode/decoder.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_decoder.dir/single/decode/decoder.c.s
 .PHONY : single/decode/decoder.c.s
 
 single/decode/validate.o: single/decode/validate.c.o
@@ -646,7 +646,7 @@ single/decode/validate.o: single/decode/validate.c.o
 
 # target to build an object file
 single/decode/validate.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.o
 .PHONY : single/decode/validate.c.o
 
 single/decode/validate.i: single/decode/validate.c.i
@@ -654,7 +654,7 @@ single/decode/validate.i: single/decode/validate.c.i
 
 # target to preprocess a source file
 single/decode/validate.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.i
 .PHONY : single/decode/validate.c.i
 
 single/decode/validate.s: single/decode/validate.c.s
@@ -662,7 +662,7 @@ single/decode/validate.s: single/decode/validate.c.s
 
 # target to generate assembly for a file
 single/decode/validate.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_decode_validate.dir/single/decode/validate.c.s
 .PHONY : single/decode/validate.c.s
 
 single/encode/encode.o: single/encode/encode.c.o
@@ -670,7 +670,7 @@ single/encode/encode.o: single/encode/encode.c.o
 
 # target to build an object file
 single/encode/encode.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.o
 .PHONY : single/encode/encode.c.o
 
 single/encode/encode.i: single/encode/encode.c.i
@@ -678,7 +678,7 @@ single/encode/encode.i: single/encode/encode.c.i
 
 # target to preprocess a source file
 single/encode/encode.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.i
 .PHONY : single/encode/encode.c.i
 
 single/encode/encode.s: single/encode/encode.c.s
@@ -686,7 +686,7 @@ single/encode/encode.s: single/encode/encode.c.s
 
 # target to generate assembly for a file
 single/encode/encode.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encode.dir/single/encode/encode.c.s
 .PHONY : single/encode/encode.c.s
 
 single/encode/encoder.o: single/encode/encoder.c.o
@@ -694,7 +694,7 @@ single/encode/encoder.o: single/encode/encoder.c.o
 
 # target to build an object file
 single/encode/encoder.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.o
 .PHONY : single/encode/encoder.c.o
 
 single/encode/encoder.i: single/encode/encoder.c.i
@@ -702,7 +702,7 @@ single/encode/encoder.i: single/encode/encoder.c.i
 
 # target to preprocess a source file
 single/encode/encoder.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.i
 .PHONY : single/encode/encoder.c.i
 
 single/encode/encoder.s: single/encode/encoder.c.s
@@ -710,7 +710,7 @@ single/encode/encoder.s: single/encode/encoder.c.s
 
 # target to generate assembly for a file
 single/encode/encoder.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_encoder.dir/single/encode/encoder.c.s
 .PHONY : single/encode/encoder.c.s
 
 single/encode/validate.o: single/encode/validate.c.o
@@ -718,7 +718,7 @@ single/encode/validate.o: single/encode/validate.c.o
 
 # target to build an object file
 single/encode/validate.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.o
 .PHONY : single/encode/validate.c.o
 
 single/encode/validate.i: single/encode/validate.c.i
@@ -726,7 +726,7 @@ single/encode/validate.i: single/encode/validate.c.i
 
 # target to preprocess a source file
 single/encode/validate.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.i
 .PHONY : single/encode/validate.c.i
 
 single/encode/validate.s: single/encode/validate.c.s
@@ -734,7 +734,7 @@ single/encode/validate.s: single/encode/validate.c.s
 
 # target to generate assembly for a file
 single/encode/validate.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_encode_validate.dir/single/encode/validate.c.s
 .PHONY : single/encode/validate.c.s
 
 single/from_to.o: single/from_to.c.o
@@ -742,7 +742,7 @@ single/from_to.o: single/from_to.c.o
 
 # target to build an object file
 single/from_to.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.o
 .PHONY : single/from_to.c.o
 
 single/from_to.i: single/from_to.c.i
@@ -750,7 +750,7 @@ single/from_to.i: single/from_to.c.i
 
 # target to preprocess a source file
 single/from_to.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.i
 .PHONY : single/from_to.c.i
 
 single/from_to.s: single/from_to.c.s
@@ -758,7 +758,7 @@ single/from_to.s: single/from_to.c.s
 
 # target to generate assembly for a file
 single/from_to.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/build.make examples/lexbor/encoding/CMakeFiles/examples_lexbor_encoding_single_from_to.dir/single/from_to.c.s
 .PHONY : single/from_to.c.s
 
 # Help Target
@@ -847,6 +847,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

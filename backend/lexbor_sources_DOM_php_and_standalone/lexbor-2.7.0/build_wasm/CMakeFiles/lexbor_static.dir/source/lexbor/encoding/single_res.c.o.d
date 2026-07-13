@@ -1,7 +1,7 @@
 CMakeFiles/lexbor_static.dir/source/lexbor/encoding/single_res.c.o: \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/encoding/single_res.c \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/encoding/base.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/base.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/encoding/single_res.c \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/encoding/base.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/base.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/features.h \
@@ -33,10 +33,10 @@ CMakeFiles/lexbor_static.dir/source/lexbor/encoding/single_res.c.o: \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/string.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/limits.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/def.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/types.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/def.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/types.h \
   /home/kbtch_/emsdk/upstream/lib/clang/23/include/stdbool.h \
   /home/kbtch_/emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/encoding/const.h \
-  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/source/lexbor/core/shs.h
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/lexbor.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/encoding/const.h \
+  /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/source/lexbor/core/shs.h

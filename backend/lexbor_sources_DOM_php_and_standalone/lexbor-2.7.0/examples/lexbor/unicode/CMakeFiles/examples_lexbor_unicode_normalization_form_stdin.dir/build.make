@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/depend.make
@@ -75,16 +75,16 @@ examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_st
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o: examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/flags.make
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o: examples/lexbor/unicode/normalization_form_stdin.c
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o: examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o -MF CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o.d -o CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o -MF CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o.d -o CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c
 
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c > CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c > CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.i
 
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c -o CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode/normalization_form_stdin.c -o CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/normalization_form_stdin.c.s
 
 # Object files for target examples_lexbor_unicode_normalization_form_stdin
 examples_lexbor_unicode_normalization_form_stdin_OBJECTS = \
@@ -98,18 +98,18 @@ examples/lexbor/unicode/normalization_form_stdin: examples/lexbor/unicode/CMakeF
 examples/lexbor/unicode/normalization_form_stdin: examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/compiler_depend.ts
 examples/lexbor/unicode/normalization_form_stdin: liblexbor.so.2.7.0
 examples/lexbor/unicode/normalization_form_stdin: examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable normalization_form_stdin"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable normalization_form_stdin"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/build: examples/lexbor/unicode/normalization_form_stdin
 .PHONY : examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/build
 
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/cmake_clean.cmake
 .PHONY : examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/clean
 
 examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/lexbor/unicode/CMakeFiles/examples_lexbor_unicode_normalization_form_stdin.dir/depend
 

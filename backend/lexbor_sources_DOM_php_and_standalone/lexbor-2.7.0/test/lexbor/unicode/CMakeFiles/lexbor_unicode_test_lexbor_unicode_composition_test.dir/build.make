@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # Include any dependencies generated for this target.
 include test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/depend.make
@@ -75,16 +75,16 @@ test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_te
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/flags.make
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o: test/lexbor/unicode/composition_test.c
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o -MF CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o.d -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o -c /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c > CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/composition_test.c -o CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s
 
 # Object files for target lexbor_unicode_test_lexbor_unicode_composition_test
 lexbor_unicode_test_lexbor_unicode_composition_test_OBJECTS = \
@@ -99,18 +99,18 @@ test/lexbor/unicode/composition_test: test/lexbor/unicode/CMakeFiles/lexbor_unic
 test/lexbor/unicode/composition_test: test/libunit.so
 test/lexbor/unicode/composition_test: liblexbor.so.2.7.0
 test/lexbor/unicode/composition_test: test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable composition_test"
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable composition_test"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build: test/lexbor/unicode/composition_test
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/cmake_clean.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode && $(CMAKE_COMMAND) -P CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/cmake_clean.cmake
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/clean
 
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/depend
 

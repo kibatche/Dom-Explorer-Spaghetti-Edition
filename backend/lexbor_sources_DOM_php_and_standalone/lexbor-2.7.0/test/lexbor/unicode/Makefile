@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_SOURCE_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0
+CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CPackSourceConfig.cmake
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/unicode//CMakeFiles/progress.marks
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/CMakeFiles 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/unicode//CMakeFiles/progress.marks
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/clean
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/preinstall
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ lexbor_unicode_test_lexbor_unicode_composition_test: test/lexbor/unicode/CMakeFi
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_composition_test/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_composition_test/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ lexbor_unicode_test_lexbor_unicode_edges_normalization_forms: test/lexbor/unicod
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_edges_normalization_forms/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_edges_normalization_forms/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ lexbor_unicode_test_lexbor_unicode_idna: test/lexbor/unicode/CMakeFiles/lexbor_u
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_idna/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_idna/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ lexbor_unicode_test_lexbor_unicode_idna_codepoints: test/lexbor/unicode/CMakeFil
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_idna_codepoints/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_idna_codepoints/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ lexbor_unicode_test_lexbor_unicode_idna_type: test/lexbor/unicode/CMakeFiles/lex
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_idna_type/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_idna_type/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ lexbor_unicode_test_lexbor_unicode_normalization_forms: test/lexbor/unicode/CMak
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_normalization_forms/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_normalization_forms/fast
 
 # Convenience name for target.
 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/rule:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/rule
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/rule
 .PHONY : test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/rule
 
 # Convenience name for target.
@@ -286,7 +286,7 @@ lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points: test/lexbor/
 
 # fast build rule for target.
 lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points/fast:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build
 .PHONY : lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points/fast
 
 composition_test.o: composition_test.c.o
@@ -294,7 +294,7 @@ composition_test.o: composition_test.c.o
 
 # target to build an object file
 composition_test.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.o
 .PHONY : composition_test.c.o
 
 composition_test.i: composition_test.c.i
@@ -302,7 +302,7 @@ composition_test.i: composition_test.c.i
 
 # target to preprocess a source file
 composition_test.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.i
 .PHONY : composition_test.c.i
 
 composition_test.s: composition_test.c.s
@@ -310,7 +310,7 @@ composition_test.s: composition_test.c.s
 
 # target to generate assembly for a file
 composition_test.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_composition_test.dir/composition_test.c.s
 .PHONY : composition_test.c.s
 
 edges_normalization_forms.o: edges_normalization_forms.c.o
@@ -318,7 +318,7 @@ edges_normalization_forms.o: edges_normalization_forms.c.o
 
 # target to build an object file
 edges_normalization_forms.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.o
 .PHONY : edges_normalization_forms.c.o
 
 edges_normalization_forms.i: edges_normalization_forms.c.i
@@ -326,7 +326,7 @@ edges_normalization_forms.i: edges_normalization_forms.c.i
 
 # target to preprocess a source file
 edges_normalization_forms.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.i
 .PHONY : edges_normalization_forms.c.i
 
 edges_normalization_forms.s: edges_normalization_forms.c.s
@@ -334,7 +334,7 @@ edges_normalization_forms.s: edges_normalization_forms.c.s
 
 # target to generate assembly for a file
 edges_normalization_forms.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_edges_normalization_forms.dir/edges_normalization_forms.c.s
 .PHONY : edges_normalization_forms.c.s
 
 idna.o: idna.c.o
@@ -342,7 +342,7 @@ idna.o: idna.c.o
 
 # target to build an object file
 idna.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.o
 .PHONY : idna.c.o
 
 idna.i: idna.c.i
@@ -350,7 +350,7 @@ idna.i: idna.c.i
 
 # target to preprocess a source file
 idna.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.i
 .PHONY : idna.c.i
 
 idna.s: idna.c.s
@@ -358,7 +358,7 @@ idna.s: idna.c.s
 
 # target to generate assembly for a file
 idna.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna.dir/idna.c.s
 .PHONY : idna.c.s
 
 idna_codepoints.o: idna_codepoints.c.o
@@ -366,7 +366,7 @@ idna_codepoints.o: idna_codepoints.c.o
 
 # target to build an object file
 idna_codepoints.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.o
 .PHONY : idna_codepoints.c.o
 
 idna_codepoints.i: idna_codepoints.c.i
@@ -374,7 +374,7 @@ idna_codepoints.i: idna_codepoints.c.i
 
 # target to preprocess a source file
 idna_codepoints.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.i
 .PHONY : idna_codepoints.c.i
 
 idna_codepoints.s: idna_codepoints.c.s
@@ -382,7 +382,7 @@ idna_codepoints.s: idna_codepoints.c.s
 
 # target to generate assembly for a file
 idna_codepoints.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_codepoints.dir/idna_codepoints.c.s
 .PHONY : idna_codepoints.c.s
 
 idna_type.o: idna_type.c.o
@@ -390,7 +390,7 @@ idna_type.o: idna_type.c.o
 
 # target to build an object file
 idna_type.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.o
 .PHONY : idna_type.c.o
 
 idna_type.i: idna_type.c.i
@@ -398,7 +398,7 @@ idna_type.i: idna_type.c.i
 
 # target to preprocess a source file
 idna_type.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.i
 .PHONY : idna_type.c.i
 
 idna_type.s: idna_type.c.s
@@ -406,7 +406,7 @@ idna_type.s: idna_type.c.s
 
 # target to generate assembly for a file
 idna_type.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_idna_type.dir/idna_type.c.s
 .PHONY : idna_type.c.s
 
 normalization_forms.o: normalization_forms.c.o
@@ -414,7 +414,7 @@ normalization_forms.o: normalization_forms.c.o
 
 # target to build an object file
 normalization_forms.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.o
 .PHONY : normalization_forms.c.o
 
 normalization_forms.i: normalization_forms.c.i
@@ -422,7 +422,7 @@ normalization_forms.i: normalization_forms.c.i
 
 # target to preprocess a source file
 normalization_forms.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.i
 .PHONY : normalization_forms.c.i
 
 normalization_forms.s: normalization_forms.c.s
@@ -430,7 +430,7 @@ normalization_forms.s: normalization_forms.c.s
 
 # target to generate assembly for a file
 normalization_forms.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms.dir/normalization_forms.c.s
 .PHONY : normalization_forms.c.s
 
 normalization_forms_code_points.o: normalization_forms_code_points.c.o
@@ -438,7 +438,7 @@ normalization_forms_code_points.o: normalization_forms_code_points.c.o
 
 # target to build an object file
 normalization_forms_code_points.c.o:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.o
 .PHONY : normalization_forms_code_points.c.o
 
 normalization_forms_code_points.i: normalization_forms_code_points.c.i
@@ -446,7 +446,7 @@ normalization_forms_code_points.i: normalization_forms_code_points.c.i
 
 # target to preprocess a source file
 normalization_forms_code_points.c.i:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.i
 .PHONY : normalization_forms_code_points.c.i
 
 normalization_forms_code_points.s: normalization_forms_code_points.c.s
@@ -454,7 +454,7 @@ normalization_forms_code_points.s: normalization_forms_code_points.c.s
 
 # target to generate assembly for a file
 normalization_forms_code_points.c.s:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(MAKE) $(MAKESILENT) -f test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/build.make test/lexbor/unicode/CMakeFiles/lexbor_unicode_test_lexbor_unicode_normalization_forms_code_points.dir/normalization_forms_code_points.c.s
 .PHONY : normalization_forms_code_points.c.s
 
 # Help Target
@@ -511,6 +511,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

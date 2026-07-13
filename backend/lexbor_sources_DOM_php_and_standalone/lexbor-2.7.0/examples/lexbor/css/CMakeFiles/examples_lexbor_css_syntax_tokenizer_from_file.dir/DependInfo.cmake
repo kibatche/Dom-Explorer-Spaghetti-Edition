@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/css/syntax/tokenizer/from_file.c" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_tokenizer_from_file.dir/syntax/tokenizer/from_file.c.o" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_tokenizer_from_file.dir/syntax/tokenizer/from_file.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/css/syntax/tokenizer/from_file.c" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_tokenizer_from_file.dir/syntax/tokenizer/from_file.c.o" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_tokenizer_from_file.dir/syntax/tokenizer/from_file.c.o.d"
   "" "examples/lexbor/css/syntax/tokenizer/from_file" "gcc" "examples/lexbor/css/CMakeFiles/examples_lexbor_css_syntax_tokenizer_from_file.dir/link.d"
   )
 

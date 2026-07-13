@@ -39,7 +39,7 @@
         </Label>
       </PipeOption>
       <PipeOption label="Version">
-        <p>Select the version to use for DOMPurify.</p>
+        <p>Select the version to use for lexbor.</p>
         <SearchInput
           v-model="pipe.opts.version"
           :read-only="readOnly"
@@ -149,7 +149,6 @@ const outputDescs = {
 // hence JSON.stringify on the response object before returning.
 const fetchLexborHtmlDocument = useSandbox(
   async (imp, opt: Opts, input: string) => {
-    // [PAI] BEGIN — send parseMode + contextTag for fragment mode
     const f = await fetch("http://127.0.0.1:5000/lexborParser.php",
       {
         'method': 'POST',
@@ -161,7 +160,6 @@ const fetchLexborHtmlDocument = useSandbox(
         }),
       }
     );
-    // [PAI] END
     const res = await f.text()
     console.log("res: "+res)
     return res
@@ -193,21 +191,9 @@ watchEffect(() => {
     const el = body.innerHTML
     
     switch (props.pipe.opts.output) {
-      // case "source":
-      //   result.value = props.input;
-      //   break;
       case "innerHTML":
         result.value = el ?? "";
         break;
-      // case "outerHTML":
-      //   result.value = noClobber(el as HTMLElement, "outerHTML") ?? "";
-      //   break;
-      // case "innerText":
-      //   result.value = noClobber(el as HTMLElement, "innerText") ?? "";
-      //   break;
-      // case "textContent":
-      //   result.value = noClobber(el, "textContent") ?? "";
-      //   break;
       default:
         result.value = "";
         break;

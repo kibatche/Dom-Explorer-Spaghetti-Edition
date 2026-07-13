@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/test/lexbor/ns/res.c" "test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o" "gcc" "test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/test/lexbor/ns/res.c" "test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o" "gcc" "test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/res.c.o.d"
   "" "test/lexbor/ns/res" "gcc" "test/lexbor/ns/CMakeFiles/lexbor_ns_test_lexbor_ns_res.dir/link.d"
   )
 

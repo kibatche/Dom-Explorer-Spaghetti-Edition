@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symphony/lexbor-2.7.0/examples/lexbor/selectors/normal_way.c" "examples/lexbor/selectors/CMakeFiles/examples_lexbor_selectors_normal_way.dir/normal_way.c.o" "gcc" "examples/lexbor/selectors/CMakeFiles/examples_lexbor_selectors_normal_way.dir/normal_way.c.o.d"
+  "/home/kbtch_/Documents/MXSS_HtmlSanitizer_Symfony/lexbor-2.7.0/examples/lexbor/selectors/normal_way.c" "examples/lexbor/selectors/CMakeFiles/examples_lexbor_selectors_normal_way.dir/normal_way.c.o" "gcc" "examples/lexbor/selectors/CMakeFiles/examples_lexbor_selectors_normal_way.dir/normal_way.c.o.d"
   "" "examples/lexbor/selectors/normal_way" "gcc" "examples/lexbor/selectors/CMakeFiles/examples_lexbor_selectors_normal_way.dir/link.d"
   )
 
