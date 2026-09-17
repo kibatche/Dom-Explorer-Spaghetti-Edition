@@ -1,4 +1,4 @@
-# Dom-Explore, Spaghetti Code Edition
+# Dom-Exploret, Spaghetti Code Edition
 
 This is a fork of the beatyfull projet DOM-Explorer, made by Bitk from YesWeHack.
 
