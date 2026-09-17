@@ -1,3 +1,22 @@
+# Dom-Explore, Spaghetti Code Edition
+
+This is a fork of the beatyfull projet DOM-Explorer, made by Bitk from YesWeHack.
+
+The purpose of this fork is to provide the hability for the web app to choose 3 new parser/sanitizer :
+
+- PHP Dom Parser, which use lexbor under the hood
+- Lexbor 2.7 parser, in order to test differences between the PHP Dom library and lexbor in a standalone program.
+- Symfony HTML Sanitizer, to test a php library that uses the PHP Dom library under the hood.
+
+The pipeline is as follow (AI generated) :
+
+<img width="1300" height="1120" alt="architecture drawio" src="https://github.com/user-attachments/assets/77d557a4-471e-449f-8fdf-e25b35dd4657" />
+
+
+The idea was to test if a backend parser is vulnerable in some form of HTML mutation. I wrote articles about this journey here : https://kibatche.github.io/.
+
+To date, 3 articles are online, the last will be released in the end of this year.
+
 # Dom-Explorer
 
 Dom-Explorer is a web-based tool designed for testing various HTML parsers and sanitizers. It displays the results of each parser as a tree and allows users to create pipelines that chain multiple parsers to visualize the transformation of HTML at each step. 
